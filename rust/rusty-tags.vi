@@ -1,0 +1,682 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+Adhoc	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^impl Adhoc {$/;"	c
+Adhoc	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^pub struct Adhoc;$/;"	s
+AdhocKind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^pub trait AdhocKind: Sized {$/;"	i
+B	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^impl<A, B> BothDebug for (A, B)$/;"	c
+B	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^impl<A, B> NotBothDebug for &(A, B) {$/;"	c
+Backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    impl Backtrace {$/;"	c	module:capture
+Backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    impl Debug for Backtrace {$/;"	c	module:capture
+Backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    impl Display for Backtrace {$/;"	c	module:capture
+Backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    pub(crate) struct Backtrace {$/;"	s	module:capture
+Backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^pub(crate) enum Backtrace {}$/;"	g
+BacktraceFrame	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    impl Debug for BacktraceFrame {$/;"	c	module:capture
+BacktraceFrame	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    struct BacktraceFrame {$/;"	s	module:capture
+BacktraceStatus	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    pub(crate) enum BacktraceStatus {$/;"	g	module:capture
+BacktraceSymbol	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    impl Debug for BacktraceSymbol {$/;"	c	module:capture
+BacktraceSymbol	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    struct BacktraceSymbol {$/;"	s	module:capture
+Binary	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Binary(Vec<u8>),$/;"	e	enum:Value
+Binary	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Binary,$/;"	e	enum:Type
+Bindable	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Bindable for () {$/;"	c
+Bindable	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^pub trait Bindable {$/;"	i
+BothDebug	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^pub trait BothDebug {$/;"	i
+Box	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl From<Error> for Box<dyn StdError + 'static> {$/;"	c
+Box	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl From<Error> for Box<dyn StdError + Send + 'static> {$/;"	c
+Box	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl From<Error> for Box<dyn StdError + Send + Sync + 'static> {$/;"	c
+Box	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^impl BoxedKind for Box<dyn StdError + Send + Sync> {}$/;"	c
+Boxed	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^impl Boxed {$/;"	c
+Boxed	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^pub struct Boxed;$/;"	s
+BoxedError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl Debug for BoxedError {$/;"	c
+BoxedError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl Display for BoxedError {$/;"	c
+BoxedError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl StdError for BoxedError {$/;"	c
+BoxedError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^pub struct BoxedError(pub Box<dyn StdError + Send + Sync>);$/;"	s
+BoxedKind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^pub trait BoxedKind: Sized {$/;"	i
+Buf	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^impl Buf {$/;"	c
+Buf	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^impl Write for Buf {$/;"	c
+Buf	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^struct Buf {$/;"	s
+Buffered	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    Buffered {$/;"	e	enum:ChainState
+Bytes	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        Bytes(Vec<u8>),$/;"	e	enum:capture::BytesOrWide
+BytesOrWide	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    enum BytesOrWide {$/;"	g	module:capture
+BytesOrWide	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    impl Debug for BytesOrWide {$/;"	c	module:capture
+Capture	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    impl Capture {$/;"	c	module:capture
+Capture	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    struct Capture {$/;"	s	module:capture
+Captured	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        Captured(LazilyResolvedCapture),$/;"	e	enum:capture::Inner
+Captured	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        Captured,$/;"	e	enum:capture::BacktraceStatus
+CastTo	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^pub trait CastTo {$/;"	i
+Chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^impl Default for Chain<'_> {$/;"	c
+Chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^impl DoubleEndedIterator for Chain<'_> {$/;"	c
+Chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^impl ExactSizeIterator for Chain<'_> {$/;"	c
+Chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^impl<'a> Chain<'a> {$/;"	c
+Chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^impl<'a> Iterator for Chain<'a> {$/;"	c
+Chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^pub(crate) struct Chain<'a> {$/;"	s
+Chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^pub struct Chain<'a> {$/;"	s
+ChainState	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^pub(crate) enum ChainState<'a> {$/;"	g
+CitizenData	/home/actuday/dev/dbms/rust/src/api.rs	/^pub struct CitizenData {$/;"	s
+CitizenData	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl support::IntoDart for CitizenData {$/;"	c
+CitizenData	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl support::IntoDartExceptPrimitive for CitizenData {}$/;"	c
+Connection	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^impl Connection {$/;"	c
+Connection	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^impl Drop for Connection {$/;"	c
+Connection	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^pub struct Connection {$/;"	s
+Connection	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^unsafe impl Send for Connection {}$/;"	c
+Context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^pub trait Context<T, E>: context::private::Sealed {$/;"	i
+ContextError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^impl<C, E> Debug for ContextError<C, E>$/;"	c
+ContextError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^impl<C, E> Display for ContextError<C, E>$/;"	c
+ContextError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^impl<C, E> StdError for ContextError<C, E>$/;"	c
+ContextError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^impl<C> StdError for ContextError<C, Error>$/;"	c
+ContextError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^pub(crate) struct ContextError<C, E> {$/;"	s
+Cursor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^impl<'l> Cursor<'l> {$/;"	c
+Cursor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^pub struct Cursor<'l> {$/;"	s
+DefaultHandler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^impl Default for DefaultHandler {$/;"	c
+DefaultHandler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub type DefaultHandler =$/;"	t
+Disabled	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        Disabled,$/;"	e	enum:capture::BacktraceStatus
+Disabled	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        Disabled,$/;"	e	enum:capture::Inner
+DisplayError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl<M> Debug for DisplayError<M>$/;"	c
+DisplayError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl<M> Display for DisplayError<M>$/;"	c
+DisplayError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl<M> StdError for DisplayError<M> where M: Display + 'static {}$/;"	c
+DisplayError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^pub struct DisplayError<M>(pub M);$/;"	s
+Done	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    Done,$/;"	e	enum:State
+E	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    impl<E> StdError for E$/;"	c	module:ext
+E	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^impl<E> TraitKind for E where E: Into<Error> {}$/;"	c
+ENABLED	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^            static ENABLED: AtomicUsize = AtomicUsize::new(0);$/;"	v	method:capture::Backtrace::enabled
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    impl StdError for Error {$/;"	c	module:ext
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl AsRef<dyn StdError + Send + Sync> for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl AsRef<dyn StdError> for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl Debug for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl Deref for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl DerefMut for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl Display for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl Drop for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl<E> From<E> for Error$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^pub struct Error {$/;"	s
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^impl Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub enum Error {$/;"	g
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^impl error::Error for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^impl fmt::Display for Error {$/;"	c
+Error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^pub struct Error {$/;"	s
+ErrorHandler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub trait ErrorHandler: UnwindSafe + RefUnwindSafe + Copy + Send + 'static {$/;"	i
+ErrorImpl	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl ErrorImpl {$/;"	c
+ErrorImpl	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl<E> Debug for ErrorImpl<E>$/;"	c
+ErrorImpl	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl<E> Display for ErrorImpl<E>$/;"	c
+ErrorImpl	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl<E> ErrorImpl<E> {$/;"	c
+ErrorImpl	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^impl<E> StdError for ErrorImpl<E>$/;"	c
+ErrorImpl	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^pub(crate) struct ErrorImpl<E = ()> {$/;"	s
+ErrorImpl	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^impl ErrorImpl {$/;"	c
+ErrorVTable	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    *(p.as_ptr() as *const &'static ErrorVTable)$/;"	v	function:vtable
+ErrorVTable	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^struct ErrorVTable {$/;"	s
+Executor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub trait Executor: RefUnwindSafe {$/;"	i
+FfiCallMode	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub enum FfiCallMode {$/;"	g
+Float	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Float(f64),$/;"	e	enum:Value
+Float	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Float,$/;"	e	enum:Type
+Handler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub trait Handler {$/;"	i
+Indented	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^impl<T> Write for Indented<'_, T>$/;"	c
+Indented	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^struct Indented<'a, D> {$/;"	s
+Inner	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    enum Inner {$/;"	g	module:capture
+Integer	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Integer(i64),$/;"	e	enum:Value
+Integer	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Integer,$/;"	e	enum:Type
+Item	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    type Item = &'a (dyn StdError + 'static);$/;"	t	implementation:Chain
+LazilyResolvedCapture	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    impl LazilyResolvedCapture {$/;"	c	module:capture
+LazilyResolvedCapture	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    struct LazilyResolvedCapture {$/;"	s	module:capture
+LazilyResolvedCapture	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    unsafe impl Sync for LazilyResolvedCapture where Capture: Sync {}$/;"	c	module:capture
+Linked	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    Linked {$/;"	e	enum:ChainState
+MessageError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl<M> Debug for MessageError<M>$/;"	c
+MessageError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl<M> Display for MessageError<M>$/;"	c
+MessageError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^impl<M> StdError for MessageError<M> where M: Display + Debug + 'static {}$/;"	c
+MessageError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^pub struct MessageError<M>(pub M);$/;"	s
+Mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<'a, T> Clone for Mut<'a, T>$/;"	c
+Mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<'a, T> Copy for Mut<'a, T> where T: ?Sized {}$/;"	c
+Mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<'a, T> Mut<'a, T> {$/;"	c
+Mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<'a, T> Mut<'a, T>$/;"	c
+Mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^pub struct Mut<'a, T>$/;"	s
+NewWithNullPtr	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub trait NewWithNullPtr {$/;"	i
+Normal	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    Normal,$/;"	e	enum:FfiCallMode
+NotBothDebug	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^pub trait NotBothDebug {$/;"	i
+Null	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Null,$/;"	e	enum:Type
+Null	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Null,$/;"	e	enum:Value
+OfficialData	/home/actuday/dev/dbms/rust/src/api.rs	/^pub struct OfficialData {$/;"	s
+OfficialData	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl support::IntoDart for OfficialData {$/;"	c
+OfficialData	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl support::IntoDartExceptPrimitive for OfficialData {}$/;"	c
+Ok	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^pub fn Ok<T>(t: T) -> Result<T> {$/;"	f
+OpenFlags	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^impl OpenFlags {$/;"	c
+OpenFlags	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^pub struct OpenFlags(c_int);$/;"	s
+Option	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    impl<T> Sealed for Option<T> {}$/;"	c	module:private
+Option	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^impl<T> Context<T, Infallible> for Option<T> {$/;"	c
+Option	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl<T: Bindable> Bindable for Option<T> {$/;"	c
+Option	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl<T: Readable> Readable for Option<T> {$/;"	c
+Own	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<T> Clone for Own<T>$/;"	c
+Own	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<T> Copy for Own<T> where T: ?Sized {}$/;"	c
+Own	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<T> Own<T>$/;"	c
+Own	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^pub struct Own<T>$/;"	s
+Own	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^unsafe impl<T> Send for Own<T> where T: ?Sized {}$/;"	c
+Own	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^unsafe impl<T> Sync for Own<T> where T: ?Sized {}$/;"	c
+Panic	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    Panic(Box<dyn Any + Send>),$/;"	e	enum:Error
+Quoted	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^impl Write for Quoted<&mut fmt::Formatter<'_>> {$/;"	c
+Quoted	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^impl<C> Debug for Quoted<C>$/;"	c
+Quoted	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^struct Quoted<C>(C);$/;"	s
+Readable	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^pub trait Readable: Sized {$/;"	i
+Ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<'a, T> Clone for Ref<'a, T>$/;"	c
+Ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<'a, T> Copy for Ref<'a, T> where T: ?Sized {}$/;"	c
+Ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<'a, T> Ref<'a, T>$/;"	c
+Ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^pub struct Ref<'a, T>$/;"	s
+ReportDartErrorHandler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^impl ErrorHandler for ReportDartErrorHandler {$/;"	c
+ReportDartErrorHandler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub struct ReportDartErrorHandler;$/;"	s
+Result	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    impl<T, E> Sealed for Result<T, E> where E: ext::StdError {}$/;"	c	module:private
+Result	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^impl<T, E> Context<T, E> for Result<T, E>$/;"	c
+Result	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^pub type Result<T, E = Error> = core::result::Result<T, E>;$/;"	t
+Result	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^pub type Result<T> = std::result::Result<T, Error>;$/;"	t
+ResultError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    ResultError(anyhow::Error),$/;"	e	enum:Error
+Row	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    Row,$/;"	e	enum:State
+Rust2Dart	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^impl Rust2Dart {$/;"	c
+Rust2Dart	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^pub struct Rust2Dart {$/;"	s
+S	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl<T, S> Wire2Api<Option<T>> for *mut S$/;"	c
+Sealed	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    pub trait Sealed {}$/;"	i	module:private
+SimpleHandler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^impl<E: Executor, EH: ErrorHandler> Handler for SimpleHandler<E, EH> {$/;"	c
+SimpleHandler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^impl<E: Executor, H: ErrorHandler> SimpleHandler<E, H> {$/;"	c
+SimpleHandler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub struct SimpleHandler<E: Executor, EH: ErrorHandler> {$/;"	s
+State	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^pub enum State {$/;"	g
+Statement	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl<'l> Drop for Statement<'l> {$/;"	c
+Statement	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl<'l> Statement<'l> {$/;"	c
+Statement	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^pub struct Statement<'l> {$/;"	s
+StdError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    pub trait StdError {$/;"	i	module:ext
+StdError	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^trait StdError: Debug + Display {$/;"	i
+Stream	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    Stream,$/;"	e	enum:FfiCallMode
+StreamSink	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^impl<T: IntoDart> StreamSink<T> {$/;"	c
+StreamSink	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^pub struct StreamSink<T: IntoDart> {$/;"	s
+String	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    String(String),$/;"	e	enum:Value
+String	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    String,$/;"	e	enum:Type
+String	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Readable for String {$/;"	c
+Sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    Sync,$/;"	e	enum:FfiCallMode
+SyncReturn	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/lib.rs	/^pub struct SyncReturn<T>(pub T);$/;"	s
+T	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^impl<T> AdhocKind for &T where T: ?Sized + Display + Debug + Send + Sync + 'static {}$/;"	c
+T	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^impl<T> CastTo for T {$/;"	c
+T	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl<T> NewWithNullPtr for *mut T {$/;"	c
+Target	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    type Target = dyn StdError + Send + Sync + 'static;$/;"	t	implementation:Error
+Target	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    type Target = T;$/;"	t	implementation:T
+Target	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    type Target;$/;"	t	interface:CastTo
+TaskCallback	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^impl TaskCallback {$/;"	c
+TaskCallback	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^pub struct TaskCallback {$/;"	s
+ThreadPoolExecutor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^impl<EH: ErrorHandler> Executor for ThreadPoolExecutor<EH> {$/;"	c
+ThreadPoolExecutor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^impl<EH: ErrorHandler> ThreadPoolExecutor<EH> {$/;"	c
+ThreadPoolExecutor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub struct ThreadPoolExecutor<EH: ErrorHandler> {$/;"	s
+Trait	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^impl Trait {$/;"	c
+Trait	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^pub struct Trait;$/;"	s
+TraitKind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^pub trait TraitKind: Sized {$/;"	i
+Type	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^pub enum Type {$/;"	g
+Unsupported	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        Unsupported,$/;"	e	enum:capture::BacktraceStatus
+Unsupported	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        Unsupported,$/;"	e	enum:capture::Inner
+Value	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^impl Value {$/;"	c
+Value	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^pub enum Value {$/;"	g
+Value	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Readable for Value {$/;"	c
+Value	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl<'l> Bindable for &'l Value {$/;"	c
+Vec	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Readable for Vec<u8> {$/;"	c
+Wide	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        Wide(Vec<u16>),$/;"	e	enum:capture::BytesOrWide
+Wire2Api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub trait Wire2Api<T> {$/;"	i
+WireSyncReturnStruct	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^pub struct WireSyncReturnStruct {$/;"	s
+WrapInfo	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub struct WrapInfo {$/;"	s
+__dispatch_ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    fn __dispatch_ensure(self, msg: &'static str) -> Error {$/;"	P	implementation:B
+__dispatch_ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    fn __dispatch_ensure(self, msg: &'static str) -> Error {$/;"	f
+__dispatch_ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    fn __dispatch_ensure(self, msg: &'static str) -> Error;$/;"	P	interface:BothDebug
+__dispatch_ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    fn __dispatch_ensure(self, msg: &'static str) -> Error;$/;"	P	interface:NotBothDebug
+__fallback_ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^macro_rules! __fallback_ensure {$/;"	M
+__fancy_ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^macro_rules! __fancy_ensure {$/;"	M
+__parse_ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^macro_rules! __parse_ensure {$/;"	M
+_assert	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    fn _assert<T: Send + Sync>() {}$/;"	f	function:_assert_send_sync
+_assert_send_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^fn _assert_send_sync() {$/;"	f
+_object	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    _object: E,$/;"	m	struct:ErrorImpl
+_phantom_data	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    _phantom_data: PhantomData<T>,$/;"	m	struct:StreamSink
+actual_start	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        actual_start: usize,$/;"	m	struct:capture::Capture
+add	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn add(&self, value: T) -> bool {$/;"	P	implementation:StreamSink
+age	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub age: i64,$/;"	m	struct:CitizenData
+anyhow	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/macros.rs	/^macro_rules! anyhow {$/;"	M
+anyhow_kind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^    fn anyhow_kind(&self) -> Adhoc {$/;"	P	interface:AdhocKind
+anyhow_kind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^    fn anyhow_kind(&self) -> Boxed {$/;"	P	interface:BoxedKind
+anyhow_kind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^    fn anyhow_kind(&self) -> Trait {$/;"	P	interface:TraitKind
+api	/home/actuday/dev/dbms/rust/src/lib.rs	/^mod api;$/;"	n
+as_binary	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    pub fn as_binary(&self) -> Option<&[u8]> {$/;"	P	implementation:Value
+as_float	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    pub fn as_float(&self) -> Option<f64> {$/;"	P	implementation:Value
+as_integer	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    pub fn as_integer(&self) -> Option<i64> {$/;"	P	implementation:Value
+as_ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn as_ptr(self) -> *const T {$/;"	f
+as_raw	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn as_raw(&self) -> *mut ffi::sqlite3 {$/;"	P	implementation:Connection
+as_raw	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    pub fn as_raw(&self) -> *mut ffi::sqlite3_stmt {$/;"	P	implementation:Cursor
+as_raw	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn as_raw(&self) -> *mut ffi::sqlite3_stmt {$/;"	P	implementation:Statement
+as_ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn as_ref(&self) -> &(dyn StdError + 'static) {$/;"	P	implementation:Error
+as_ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn as_ref(&self) -> &(dyn StdError + Send + Sync + 'static) {$/;"	P	implementation:Error
+as_str	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    fn as_str(&self) -> &str {$/;"	P	implementation:Buf
+as_string	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    pub fn as_string(&self) -> Option<&str> {$/;"	P	implementation:Value
+audio_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn audio_dir() -> Option<PathBuf> {$/;"	f
+audio_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn audio_dir()      -> Option<PathBuf> { dirs_sys::user_dir("MUSIC") }$/;"	f
+audio_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn audio_dir()      -> Option<PathBuf> { home_dir().map(|h| h.join("Music")) }$/;"	f
+audio_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn audio_dir()      -> Option<PathBuf> { None }$/;"	f
+audio_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn audio_dir()      -> Option<PathBuf> { dirs_sys::known_folder_music() }$/;"	f
+backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^macro_rules! backtrace {$/;"	M
+backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn backtrace(&self) -> Option<&Backtrace> {$/;"	f
+backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    backtrace: Option<Backtrace>,$/;"	m	struct:ErrorImpl
+backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn backtrace(&self) -> Option<&Backtrace> {$/;"	f
+backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn backtrace(&self) -> &impl_backtrace!() {$/;"	P	implementation:Error
+backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) unsafe fn backtrace(this: Ref<Self>) -> &Backtrace {$/;"	P	implementation:ErrorImpl
+backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod backtrace;$/;"	n
+backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^    fn backtrace(&self) -> Option<&crate::backtrace::Backtrace> {$/;"	P	implementation:BoxedError
+backtrace_if_absent	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^macro_rules! backtrace_if_absent {$/;"	M
+bail	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/macros.rs	/^macro_rules! bail {$/;"	M
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    pub fn bind(&mut self, values: &[Value]) -> Result<()> {$/;"	P	implementation:Cursor
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn bind(self, &mut Statement, usize) -> Result<()>;$/;"	P	interface:Bindable
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn bind(self, statement: &mut Statement, i: usize) -> Result<()> {$/;"	P	implementation:Bindable
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn bind(self, statement: &mut Statement, i: usize) -> Result<()> {$/;"	P	implementation:Option
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn bind(self, statement: &mut Statement, i: usize) -> Result<()> {$/;"	P	implementation:Value
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn bind(self, statement: &mut Statement, i: usize) -> Result<()> {$/;"	P	implementation:f64
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn bind(self, statement: &mut Statement, i: usize) -> Result<()> {$/;"	P	implementation:i64
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn bind(self, statement: &mut Statement, i: usize) -> Result<()> {$/;"	P	implementation:str
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn bind(self, statement: &mut Statement, i: usize) -> Result<()> {$/;"	P	implementation:u8
+bind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn bind<T: Bindable>(&mut self, i: usize, value: T) -> Result<()> {$/;"	P	implementation:Statement
+bind_by_name	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    pub fn bind_by_name<S, V>(&mut self, values: V) -> Result<()>$/;"	P	implementation:Cursor
+bind_by_name	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn bind_by_name<T: Bindable>(&mut self, name: &str, value: T) -> Result<()> {$/;"	P	implementation:Statement
+box_from_leak_ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^pub unsafe fn box_from_leak_ptr<T>(ptr: *mut T) -> Box<T> {$/;"	f
+boxed	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub unsafe fn boxed(self) -> Box<T> {$/;"	f
+bridge_generated	/home/actuday/dev/dbms/rust/src/lib.rs	/^mod bridge_generated;$/;"	n
+busy_callback	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    busy_callback: Option<Box<dyn FnMut(usize) -> bool>>,$/;"	m	struct:Connection
+busy_callback	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^extern "C" fn busy_callback<F>(callback: *mut c_void, attempts: c_int) -> c_int$/;"	f
+by_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn by_mut(&mut self) -> Mut<T> {$/;"	f
+by_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn by_mut(self) -> Mut<'a, T> {$/;"	f
+by_ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn by_ref(&self) -> Ref<T> {$/;"	f
+by_ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn by_ref(self) -> Ref<'a, T> {$/;"	f
+bytes	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    bytes: [MaybeUninit<u8>; 40],$/;"	m	struct:Buf
+c_str_to_str	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^macro_rules! c_str_to_str($/;"	M
+c_str_to_string	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^macro_rules! c_str_to_string($/;"	M
+cache_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn cache_dir() -> Option<PathBuf> {$/;"	f
+cache_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn cache_dir()      -> Option<PathBuf> { env::var_os("XDG_CACHE_HOME") .and_then(dirs_sys::i/;"	f
+cache_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn cache_dir()      -> Option<PathBuf> { home_dir().map(|h| h.join("Library\/Caches")) }$/;"	f
+cache_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn cache_dir()      -> Option<PathBuf> { None }$/;"	f
+cache_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn cache_dir()      -> Option<PathBuf> { data_local_dir() }$/;"	f
+capture	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        capture: UnsafeCell<Capture>,$/;"	m	struct:capture::LazilyResolvedCapture
+capture	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        pub(crate) fn capture() -> Backtrace {$/;"	P	implementation:capture::Backtrace
+capture	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^mod capture {$/;"	n
+cast	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn cast<U: CastTo>(self) -> Mut<'a, U::Target> {$/;"	f
+cast	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn cast<U: CastTo>(self) -> Own<U::Target> {$/;"	f
+cast	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn cast<U: CastTo>(self) -> Ref<'a, U::Target> {$/;"	f
+chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn chain(&self) -> Chain {$/;"	P	implementation:Error
+chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) unsafe fn chain(this: Ref<Self>) -> Chain {$/;"	P	implementation:ErrorImpl
+chain	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod chain;$/;"	n
+change_count	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn change_count(&self) -> usize {$/;"	P	implementation:Connection
+changes	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn changes(&self) -> usize {$/;"	P	implementation:Connection
+clone	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    fn clone(&self) -> Self {$/;"	f
+close	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn close(&self) -> bool {$/;"	P	implementation:StreamSink
+close_stream	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn close_stream(&self) -> bool {$/;"	P	implementation:Rust2Dart
+code	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    pub fn code(&self) -> &'static str {$/;"	P	implementation:Error
+code	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    pub code: Option<isize>,$/;"	m	struct:Error
+colno	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        colno: Option<u32>,$/;"	m	struct:capture::BacktraceSymbol
+column_count	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    pub fn column_count(&self) -> usize {$/;"	P	implementation:Cursor
+column_count	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn column_count(&self) -> usize {$/;"	P	implementation:Statement
+column_name	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn column_name(&self, i: usize) -> &str {$/;"	P	implementation:Statement
+column_names	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn column_names(&self) -> Vec<&str> {$/;"	P	implementation:Statement
+column_type	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn column_type(&self, i: usize) -> Type {$/;"	P	implementation:Statement
+config_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn config_dir() -> Option<PathBuf> {$/;"	f
+config_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn config_dir()     -> Option<PathBuf> { env::var_os("XDG_CONFIG_HOME").and_then(dirs_sys::i/;"	f
+config_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn config_dir()     -> Option<PathBuf> { home_dir().map(|h| h.join("Library\/Application Sup/;"	f
+config_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn config_dir()     -> Option<PathBuf> { None }$/;"	f
+config_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn config_dir()     -> Option<PathBuf> { data_dir() }$/;"	f
+connection	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^mod connection;$/;"	n
+construct	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    unsafe fn construct<E>($/;"	P	implementation:Error
+context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn context<C>(self, context: C) -> Result<T, Error>$/;"	P	implementation:Option
+context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn context<C>(self, context: C) -> Result<T, Error>$/;"	f
+context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub context: C,$/;"	m	struct:ContextError
+context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn context<C>(self, context: C) -> Self$/;"	P	implementation:Error
+context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^    fn context<C>(self, context: C) -> Result<T, Error>$/;"	P	interface:Context
+context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod context;$/;"	n
+context_backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn context_backtrace<C>(e: Ref<ErrorImpl>) -> Option<&Backtrace>$/;"	f
+context_chain_downcast	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn context_chain_downcast<C>(e: Ref<ErrorImpl>, target: TypeId) -> Option<Ref<()>>$/;"	f
+context_chain_downcast_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn context_chain_downcast_mut<C>(e: Mut<ErrorImpl>, target: TypeId) -> Option<Mut<()>>$/;"	f
+context_chain_drop_rest	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn context_chain_drop_rest<C>(e: Own<ErrorImpl>, target: TypeId)$/;"	f
+context_downcast	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn context_downcast<C, E>(e: Ref<ErrorImpl>, target: TypeId) -> Option<Ref<()>>$/;"	f
+context_downcast_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn context_downcast_mut<C, E>(e: Mut<ErrorImpl>, target: TypeId) -> Option<Mut<()>>$/;"	f
+context_drop_rest	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn context_drop_rest<C, E>(e: Own<ErrorImpl>, target: TypeId)$/;"	f
+count	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    pub fn count(&self) -> usize {$/;"	P	implementation:Cursor
+count	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn count(&self) -> usize {$/;"	P	implementation:Statement
+create	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn create(ip: usize) -> Backtrace {$/;"	P	implementation:capture::Backtrace
+cursor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^mod cursor;$/;"	n
+cursor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn cursor(self) -> Cursor<'l> {$/;"	P	implementation:Statement
+data_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn data_dir() -> Option<PathBuf> {$/;"	f
+data_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn data_dir()       -> Option<PathBuf> { env::var_os("XDG_DATA_HOME")  .and_then(dirs_sys::i/;"	f
+data_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn data_dir()       -> Option<PathBuf> { home_dir().map(|h| h.join("Library\/Application Sup/;"	f
+data_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn data_dir()       -> Option<PathBuf> { None }$/;"	f
+data_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn data_dir()       -> Option<PathBuf> { dirs_sys::known_folder_roaming_app_data() }$/;"	f
+data_local_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn data_local_dir() -> Option<PathBuf> {$/;"	f
+data_local_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn data_local_dir() -> Option<PathBuf> { data_dir() }$/;"	f
+data_local_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn data_local_dir() -> Option<PathBuf> { data_dir() }$/;"	f
+data_local_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn data_local_dir() -> Option<PathBuf> { None }$/;"	f
+data_local_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn data_local_dir() -> Option<PathBuf> { dirs_sys::known_folder_local_app_data() }$/;"	f
+debug	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    pub(crate) unsafe fn debug(this: Ref<Self>, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:ErrorImpl
+debug_name	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    pub debug_name: &'static str,$/;"	m	struct:WrapInfo
+default	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    fn default() -> Self {$/;"	P	implementation:Chain
+default	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn default() -> Self {$/;"	P	implementation:DefaultHandler
+deref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn deref(&self) -> &Self::Target {$/;"	P	implementation:Error
+deref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub unsafe fn deref(self) -> &'a T {$/;"	f
+deref_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn deref_mut(&mut self) -> &mut Self::Target {$/;"	P	implementation:Error
+deref_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub unsafe fn deref_mut(self) -> &'a mut T {$/;"	f
+description	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    fn description(&self) -> &str {$/;"	P	implementation:Error
+desktop_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn desktop_dir() -> Option<PathBuf> {$/;"	f
+desktop_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn desktop_dir()    -> Option<PathBuf> { dirs_sys::user_dir("DESKTOP") }$/;"	f
+desktop_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn desktop_dir()    -> Option<PathBuf> { home_dir().map(|h| h.join("Desktop")) }$/;"	f
+desktop_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn desktop_dir()    -> Option<PathBuf> { None }$/;"	f
+desktop_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn desktop_dir()    -> Option<PathBuf> { dirs_sys::known_folder_desktop() }$/;"	f
+display	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    pub(crate) unsafe fn display(this: Ref<Self>, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:ErrorImpl
+document_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn document_dir() -> Option<PathBuf> {$/;"	f
+document_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn document_dir()   -> Option<PathBuf> { dirs_sys::user_dir("DOCUMENTS") }$/;"	f
+document_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn document_dir()   -> Option<PathBuf> { home_dir().map(|h| h.join("Documents")) }$/;"	f
+document_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn document_dir()   -> Option<PathBuf> { None }$/;"	f
+document_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn document_dir()   -> Option<PathBuf> { dirs_sys::known_folder_documents() }$/;"	f
+downcast	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn downcast<E>(mut self) -> Result<E, Self>$/;"	P	implementation:Error
+downcast_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn downcast_mut<E>(&mut self) -> Option<&mut E>$/;"	P	implementation:Error
+downcast_ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn downcast_ref<E>(&self) -> Option<&E>$/;"	P	implementation:Error
+download_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn download_dir() -> Option<PathBuf> {$/;"	f
+download_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn download_dir()   -> Option<PathBuf> { dirs_sys::user_dir("DOWNLOAD") }$/;"	f
+download_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn download_dir()   -> Option<PathBuf> { home_dir().map(|h| h.join("Downloads")) }$/;"	f
+download_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn download_dir()   -> Option<PathBuf> { None }$/;"	f
+download_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn download_dir()   -> Option<PathBuf> { dirs_sys::known_folder_downloads() }$/;"	f
+drop	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn drop(&mut self) {$/;"	P	implementation:Error
+drop	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    fn drop(&mut self) {$/;"	P	implementation:Connection
+drop	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn drop(&mut self) {$/;"	P	implementation:Statement
+enabled	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn enabled() -> bool {$/;"	P	implementation:capture::Backtrace
+ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod ensure;$/;"	n
+ensure	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/macros.rs	/^macro_rules! ensure {$/;"	M
+erase	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn erase(&self) -> Ref<ErrorImpl> {$/;"	P	implementation:ErrorImpl
+error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub error: E,$/;"	m	struct:ContextError
+error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) unsafe fn error(this: Ref<Self>) -> &(dyn StdError + Send + Sync + 'static) {$/;"	P	implementation:ErrorImpl
+error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod error;$/;"	n
+error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn error(&self, error_code: String, error_message: String) -> bool {$/;"	P	implementation:Rust2Dart
+error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^macro_rules! error($/;"	M
+error_full	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn error_full($/;"	P	implementation:Rust2Dart
+error_handler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    error_handler: EH,$/;"	m	struct:SimpleHandler
+error_handler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    error_handler: EH,$/;"	m	struct:ThreadPoolExecutor
+error_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) unsafe fn error_mut(this: Mut<Self>) -> &mut (dyn StdError + Send + Sync + 'stati/;"	P	implementation:ErrorImpl
+executable_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn executable_dir() -> Option<PathBuf> {$/;"	f
+executable_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn executable_dir() -> Option<PathBuf> { env::var_os("XDG_BIN_HOME")   .and_then(dirs_sys::i/;"	f
+executable_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn executable_dir() -> Option<PathBuf> { None }$/;"	f
+executable_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn executable_dir() -> Option<PathBuf> { None }$/;"	f
+executable_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn executable_dir() -> Option<PathBuf> { None }$/;"	f
+execute	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn execute<TaskFn, TaskRet>(&self, wrap_info: WrapInfo, task: TaskFn)$/;"	P	implementation:ThreadPoolExecutor
+execute	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn execute<TaskFn, TaskRet>(&self, wrap_info: WrapInfo, task: TaskFn)$/;"	P	interface:Executor
+execute	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn execute<T: AsRef<str>>(&self, statement: T) -> Result<()> {$/;"	P	implementation:Connection
+execute_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn execute_sync<SyncTaskFn>($/;"	P	implementation:ThreadPoolExecutor
+execute_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn execute_sync<SyncTaskFn>($/;"	P	interface:Executor
+executor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    executor: E,$/;"	m	struct:SimpleHandler
+ext	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^mod ext {$/;"	n
+ext_context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^        fn ext_context<C>(self, context: C) -> Error$/;"	P	implementation:ext::Error
+ext_context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^        fn ext_context<C>(self, context: C) -> Error$/;"	P	interface:ext::StdError
+ext_context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^        fn ext_context<C>(self, context: C) -> Error$/;"	f	module:ext
+extend	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn extend<'b>(self) -> Mut<'b, T> {$/;"	f
+f64	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Bindable for f64 {$/;"	c
+f64	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Readable for f64 {$/;"	c
+filename	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        filename: Option<BytesOrWide>,$/;"	m	struct:capture::BacktraceSymbol
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:capture::Backtrace
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:capture::BacktraceFrame
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:capture::BacktraceSymbol
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn fmt(&self, fmt: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:capture::BytesOrWide
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Error
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod fmt;$/;"	n
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:BoxedError
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	f
+fmt	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    fn fmt(&self, formatter: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Error
+font_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn font_dir() -> Option<PathBuf> {$/;"	f
+font_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn font_dir()       -> Option<PathBuf> { data_dir().map(|d| d.join("fonts")) }$/;"	f
+font_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn font_dir()       -> Option<PathBuf> { home_dir().map(|h| h.join("Library\/Fonts")) }$/;"	f
+font_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn font_dir()       -> Option<PathBuf> { None }$/;"	f
+font_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn font_dir()       -> Option<PathBuf> { None }$/;"	f
+force	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn force(&self) -> &Capture {$/;"	P	implementation:capture::LazilyResolvedCapture
+format_err	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^    pub fn format_err(args: Arguments) -> Error {$/;"	f	module:private
+frame	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        frame: Frame,$/;"	m	struct:capture::BacktraceFrame
+frames	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        frames: Vec<BacktraceFrame>,$/;"	m	struct:capture::Capture
+free_WireSyncReturnStruct	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn free_WireSyncReturnStruct(val: support::WireSyncReturnStruct) {$/;"	f
+from	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn from(error: E) -> Self {$/;"	f
+from	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn from(error: Error) -> Self {$/;"	P	implementation:Box
+from_adhoc	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) fn from_adhoc<M>(message: M, backtrace: Option<Backtrace>) -> Self$/;"	P	implementation:Error
+from_boxed	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) fn from_boxed($/;"	P	implementation:Error
+from_context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) fn from_context<C, E>(context: C, error: E, backtrace: Option<Backtrace>) -> Self$/;"	P	implementation:Error
+from_display	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) fn from_display<M>(message: M, backtrace: Option<Backtrace>) -> Self$/;"	P	implementation:Error
+from_raw	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn from_raw(ptr: NonNull<T>) -> Self {$/;"	f
+from_std	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub(crate) fn from_std<E>(error: E, backtrace: Option<Backtrace>) -> Self$/;"	P	implementation:Error
+gender	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub gender: String,$/;"	m	struct:CitizenData
+get_citizen_summary	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn get_citizen_summary(id: i64, password: String) -> Result<CitizenData> {$/;"	f
+get_official_summary	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn get_official_summary(id: i64, password: String) -> Result<OfficialData> {$/;"	f
+handle_error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn handle_error(&self, port: i64, error: Error) {$/;"	P	implementation:ReportDartErrorHandler
+handle_error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn handle_error(&self, port: i64, error: Error);$/;"	P	interface:ErrorHandler
+handle_error_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn handle_error_sync(&self, error: Error) -> Vec<u8> {$/;"	P	implementation:ReportDartErrorHandler
+handle_error_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn handle_error_sync(&self, error: Error) -> Vec<u8>;$/;"	P	interface:ErrorHandler
+handler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/lib.rs	/^pub mod handler;$/;"	n
+home_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn home_dir() -> Option<PathBuf> {$/;"	f
+home_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn home_dir()       -> Option<PathBuf> { dirs_sys::home_dir() }$/;"	f
+home_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn home_dir()       -> Option<PathBuf> { dirs_sys::home_dir() }$/;"	f
+home_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn home_dir()       -> Option<PathBuf> { None }$/;"	f
+home_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn home_dir()       -> Option<PathBuf> { dirs_sys::known_folder_profile() }$/;"	f
+i64	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Bindable for i64 {$/;"	c
+i64	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Readable for i64 {$/;"	c
+i64	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl Wire2Api<i64> for i64 {$/;"	c
+impl_backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^macro_rules! impl_backtrace {$/;"	M
+inner	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        inner: Inner,$/;"	m	struct:capture::Backtrace
+inner	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    inner: &'a mut D,$/;"	m	struct:Indented
+inner	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^    inner: Own<ErrorImpl>,$/;"	m	struct:Error
+into_cursor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn into_cursor(self) -> Cursor<'l> {$/;"	P	implementation:Statement
+into_dart	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn into_dart(self) -> support::DartCObject {$/;"	P	implementation:CitizenData
+into_dart	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn into_dart(self) -> support::DartCObject {$/;"	P	implementation:OfficialData
+into_leak_vec_ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^pub fn into_leak_vec_ptr<T: Clone>(mut v: Vec<T>) -> (*mut T, i32) {$/;"	f
+is	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn is<E>(&self) -> bool$/;"	P	implementation:Error
+isolate	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    isolate: Isolate,$/;"	m	struct:Rust2Dart
+iterate	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn iterate<T: AsRef<str>, F>(&self, statement: T, callback: F) -> Result<()>$/;"	P	implementation:Connection
+kind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^    pub mod kind {$/;"	n	module:private
+kind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod kind;$/;"	n
+kind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    pub fn kind(&self) -> Type {$/;"	P	implementation:Value
+kind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn kind(&self, i: usize) -> Type {$/;"	P	implementation:Statement
+last_error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^fn last_error(raw: *mut ffi::sqlite3) -> Option<Error> {$/;"	f
+len	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    fn len(&self) -> usize {$/;"	P	implementation:Chain
+len	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^    pub len: i32,$/;"	m	struct:WireSyncReturnStruct
+len	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    len: i32,$/;"	m	struct:wire_uint_8_list
+lifetime	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    lifetime: PhantomData<&'a T>,$/;"	m	struct:Ref
+lifetime	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    lifetime: PhantomData<&'a mut T>,$/;"	m	struct:Mut
+lin	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^mod lin;$/;"	n
+lineno	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        lineno: Option<u32>,$/;"	m	struct:capture::BacktraceSymbol
+mac	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^mod mac;$/;"	n
+macros	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod macros;$/;"	n
+message	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    pub fn message(&self) -> String {$/;"	P	implementation:Error
+message	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    pub message: Option<String>,$/;"	m	struct:Error
+mode	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    pub mode: FfiCallMode,$/;"	m	struct:WrapInfo
+msg	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn msg<M>(message: M) -> Self$/;"	P	implementation:Error
+name	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        name: Option<Vec<u8>>,$/;"	m	struct:capture::BacktraceSymbol
+name	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn name(&self, i: usize) -> &str {$/;"	P	implementation:Statement
+name	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub name: String,$/;"	m	struct:CitizenData
+name	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub name: String,$/;"	m	struct:OfficialData
+names	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn names(&self) -> Vec<&str> {$/;"	P	implementation:Statement
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn new(capture: Capture) -> Self {$/;"	P	implementation:capture::LazilyResolvedCapture
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    pub fn new(head: &'a (dyn StdError + 'static)) -> Self {$/;"	P	implementation:Chain
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    fn new() -> Self {$/;"	P	implementation:Buf
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn new<E>(error: E) -> Self$/;"	P	implementation:Error
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^    pub fn new(self, error: Box<dyn StdError + Send + Sync>) -> Error {$/;"	P	implementation:Boxed
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^    pub fn new<E>(self, error: E) -> Error$/;"	P	implementation:Trait
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^    pub fn new<M>(self, message: M) -> Error$/;"	P	implementation:Adhoc
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn new(ptr: &'a T) -> Self {$/;"	f
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn new(ptr: &'a mut T) -> Self {$/;"	f
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub fn new(ptr: Box<T>) -> Self {$/;"	f
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    pub fn new(error_handler: EH) -> Self {$/;"	P	implementation:ThreadPoolExecutor
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    pub fn new(executor: E, error_handler: H) -> Self {$/;"	P	implementation:SimpleHandler
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn new(port: i64) -> Self {$/;"	P	implementation:Rust2Dart
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn new(rust2dart: Rust2Dart) -> Self {$/;"	P	implementation:StreamSink
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn new(rust2dart: Rust2Dart) -> Self {$/;"	P	implementation:TaskCallback
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn new() -> Self {$/;"	P	implementation:OpenFlags
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^pub fn new<'l>(statement: Statement<'l>) -> Cursor<'l> {$/;"	f
+new	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^pub fn new<'l, T: AsRef<str>>(raw1: *mut ffi::sqlite3, statement: T) -> Result<Statement<'l>> {$/;"	f
+new_leak_box_ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^pub fn new_leak_box_ptr<T>(t: T) -> *mut T {$/;"	f
+new_leak_vec_ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^pub fn new_leak_vec_ptr<T: Clone>(fill: T, length: i32) -> *mut T {$/;"	f
+new_uint_8_list	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn new_uint_8_list(len: i32) -> *mut wire_uint_8_list {$/;"	f
+new_with_null_ptr	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn new_with_null_ptr() -> Self {$/;"	P	implementation:T
+new_with_null_ptr	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn new_with_null_ptr() -> Self;$/;"	P	interface:NewWithNullPtr
+next	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	P	implementation:Chain
+next	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    pub fn next(&mut self) -> Result<Option<&[Value]>> {$/;"	P	implementation:Cursor
+next	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn next(&mut self) -> Result<State> {$/;"	P	implementation:Statement
+next_back	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    fn next_back(&mut self) -> Option<Self::Item> {$/;"	P	implementation:Chain
+no_backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^fn no_backtrace(e: Ref<ErrorImpl>) -> Option<&Backtrace> {$/;"	f
+no_digits	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    fn no_digits() {$/;"	f	module:tests
+number	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    number: Option<usize>,$/;"	m	struct:Indented
+object_backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    object_backtrace: unsafe fn(Ref<ErrorImpl>) -> Option<&Backtrace>,$/;"	m	struct:ErrorVTable
+object_boxed	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    object_boxed: unsafe fn(Own<ErrorImpl>) -> Box<dyn StdError + Send + Sync + 'static>,$/;"	m	struct:ErrorVTable
+object_boxed	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn object_boxed<E>(e: Own<ErrorImpl>) -> Box<dyn StdError + Send + Sync + 'static>$/;"	f
+object_downcast	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    object_downcast: unsafe fn(Ref<ErrorImpl>, TypeId) -> Option<Ref<()>>,$/;"	m	struct:ErrorVTable
+object_downcast	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn object_downcast<E>(e: Ref<ErrorImpl>, target: TypeId) -> Option<Ref<()>>$/;"	f
+object_downcast_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    object_downcast_mut: unsafe fn(Mut<ErrorImpl>, TypeId) -> Option<Mut<()>>,$/;"	m	struct:ErrorVTable
+object_downcast_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn object_downcast_mut<E>(e: Mut<ErrorImpl>, target: TypeId) -> Option<Mut<()>>$/;"	f
+object_drop	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    object_drop: unsafe fn(Own<ErrorImpl>),$/;"	m	struct:ErrorVTable
+object_drop	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn object_drop<E>(e: Own<ErrorImpl>) {$/;"	f
+object_drop_front	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn object_drop_front<E>(e: Own<ErrorImpl>, target: TypeId) {$/;"	f
+object_drop_rest	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    object_drop_rest: unsafe fn(Own<ErrorImpl>, TypeId),$/;"	m	struct:ErrorVTable
+object_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    object_mut: unsafe fn(Mut<ErrorImpl>) -> &mut (dyn StdError + Send + Sync + 'static),$/;"	m	struct:ErrorVTable
+object_mut	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn object_mut<E>(e: Mut<ErrorImpl>) -> &mut (dyn StdError + Send + Sync + 'static)$/;"	f
+object_ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    object_ref: unsafe fn(Ref<ErrorImpl>) -> Ref<dyn StdError + Send + Sync + 'static>,$/;"	m	struct:ErrorVTable
+object_ref	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn object_ref<E>(e: Ref<ErrorImpl>) -> Ref<dyn StdError + Send + Sync + 'static>$/;"	f
+ok	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^macro_rules! ok($/;"	M
+one_digit	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    fn one_digit() {$/;"	f	module:tests
+open	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn open<T: AsRef<Path>>(path: T) -> Result<Connection> {$/;"	P	implementation:Connection
+open	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^pub fn open<T: AsRef<std::path::Path>>(path: T) -> Result<Connection> {$/;"	f
+open_with_flags	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn open_with_flags<T: AsRef<Path>>(path: T, flags: OpenFlags) -> Result<Connection> {$/;"	P	implementation:Connection
+output_filename	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    fn output_filename($/;"	f	module:capture
+parameter_index	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn parameter_index(&self, parameter: &str) -> Result<Option<usize>> {$/;"	P	implementation:Statement
+path_to_cstr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^macro_rules! path_to_cstr($/;"	M
+phantom	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    phantom: PhantomData<ffi::sqlite3>,$/;"	m	struct:Connection
+phantom	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    phantom: PhantomData<(ffi::sqlite3_stmt, &'l ffi::sqlite3)>,$/;"	m	struct:Statement
+picture_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn picture_dir() -> Option<PathBuf> {$/;"	f
+picture_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn picture_dir()    -> Option<PathBuf> { dirs_sys::user_dir("PICTURES") }$/;"	f
+picture_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn picture_dir()    -> Option<PathBuf> { home_dir().map(|h| h.join("Pictures")) }$/;"	f
+picture_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn picture_dir()    -> Option<PathBuf> { None }$/;"	f
+picture_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn picture_dir()    -> Option<PathBuf> { dirs_sys::known_folder_pictures() }$/;"	f
+port	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    pub port: Option<i64>,$/;"	m	struct:WrapInfo
+preference_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn preference_dir() -> Option<PathBuf> {$/;"	f
+preference_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn preference_dir() -> Option<PathBuf> { config_dir() }$/;"	f
+preference_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn preference_dir() -> Option<PathBuf> { home_dir().map(|h| h.join("Library\/Preferences")) /;"	f
+preference_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn preference_dir() -> Option<PathBuf> { None }$/;"	f
+preference_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn preference_dir() -> Option<PathBuf> { data_dir() }$/;"	f
+prepare	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn prepare<'l, T: AsRef<str>>(&'l self, statement: T) -> Result<Statement<'l>> {$/;"	P	implementation:Connection
+private	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^pub(crate) mod private {$/;"	n
+private	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^pub mod private {$/;"	n
+process_callback	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^extern "C" fn process_callback<F>($/;"	f
+ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod ptr;$/;"	n
+ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub ptr: NonNull<T>,$/;"	m	struct:Mut
+ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub ptr: NonNull<T>,$/;"	m	struct:Own
+ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub ptr: NonNull<T>,$/;"	m	struct:Ref
+ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^    pub ptr: *mut u8,$/;"	m	struct:WireSyncReturnStruct
+ptr	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    ptr: *mut u8,$/;"	m	struct:wire_uint_8_list
+public_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn public_dir() -> Option<PathBuf> {$/;"	f
+public_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn public_dir()     -> Option<PathBuf> { dirs_sys::user_dir("PUBLICSHARE") }$/;"	f
+public_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn public_dir()     -> Option<PathBuf> { home_dir().map(|h| h.join("Public")) }$/;"	f
+public_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn public_dir()     -> Option<PathBuf> { None }$/;"	f
+public_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn public_dir()     -> Option<PathBuf> { dirs_sys::known_folder_public()}$/;"	f
+raise	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^macro_rules! raise($/;"	M
+raw	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    raw: *mut ffi::sqlite3,$/;"	m	struct:Connection
+raw	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    raw: (*mut ffi::sqlite3_stmt, *mut ffi::sqlite3),$/;"	m	struct:Statement
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ptr.rs	/^    pub unsafe fn read(self) -> T {$/;"	P	implementation:Mut
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn read(&Statement, usize) -> Result<Self>;$/;"	P	interface:Readable
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn read(statement: &Statement, i: usize) -> Result<Self> {$/;"	P	implementation:Option
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn read(statement: &Statement, i: usize) -> Result<Self> {$/;"	P	implementation:String
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn read(statement: &Statement, i: usize) -> Result<Self> {$/;"	P	implementation:Value
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn read(statement: &Statement, i: usize) -> Result<Self> {$/;"	P	implementation:Vec
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn read(statement: &Statement, i: usize) -> Result<Self> {$/;"	P	implementation:f64
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    fn read(statement: &Statement, i: usize) -> Result<Self> {$/;"	P	implementation:i64
+read	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn read<T: Readable>(&self, i: usize) -> Result<T> {$/;"	P	implementation:Statement
+remove_busy_handler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn remove_busy_handler(&mut self) -> Result<()> {$/;"	P	implementation:Connection
+render	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^fn render(msg: &'static str, lhs: &dyn Debug, rhs: &dyn Debug) -> Error {$/;"	f
+reset	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn reset(&mut self) -> Result<()> {$/;"	P	implementation:Statement
+resolve	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        fn resolve(&mut self) {$/;"	P	implementation:capture::Capture
+resolved	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        resolved: bool,$/;"	m	struct:capture::Capture
+root_cause	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn root_cause(&self) -> &(dyn StdError + 'static) {$/;"	P	implementation:Error
+runtime_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn runtime_dir() -> Option<PathBuf> {$/;"	f
+runtime_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn runtime_dir()    -> Option<PathBuf> { env::var_os("XDG_RUNTIME_DIR").and_then(dirs_sys::i/;"	f
+runtime_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn runtime_dir()    -> Option<PathBuf> { None }$/;"	f
+runtime_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn runtime_dir()    -> Option<PathBuf> { None }$/;"	f
+runtime_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn runtime_dir()    -> Option<PathBuf> { None }$/;"	f
+rust2dart	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/lib.rs	/^pub mod rust2dart;$/;"	n
+rust2dart	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    rust2dart: Rust2Dart,$/;"	m	struct:StreamSink
+rust2dart	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    rust2dart: Rust2Dart,$/;"	m	struct:TaskCallback
+set_busy_handler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_busy_handler<F>(&mut self, callback: F) -> Result<()>$/;"	P	implementation:Connection
+set_busy_timeout	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_busy_timeout(&mut self, milliseconds: usize) -> Result<()> {$/;"	P	implementation:Connection
+set_create	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_create(mut self) -> Self {$/;"	P	implementation:OpenFlags
+set_full_mutex	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_full_mutex(mut self) -> Self {$/;"	P	implementation:OpenFlags
+set_no_mutex	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_no_mutex(mut self) -> Self {$/;"	P	implementation:OpenFlags
+set_read_only	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_read_only(mut self) -> Self {$/;"	P	implementation:OpenFlags
+set_read_write	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_read_write(mut self) -> Self {$/;"	P	implementation:OpenFlags
+size_hint	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    fn size_hint(&self) -> (usize, Option<usize>) {$/;"	P	implementation:Chain
+source	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn source(&self) -> Option<&(dyn StdError + 'static)> {$/;"	f
+source	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn source(&self) -> Option<&(dyn StdError + 'static)> {$/;"	f
+source	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^    fn source(&self) -> Option<&(dyn StdError + 'static)> {$/;"	P	interface:StdError
+source	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/wrapper.rs	/^    fn source(&self) -> Option<&(dyn StdError + 'static)> {$/;"	P	implementation:BoxedError
+started	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    started: bool,$/;"	m	struct:Indented
+state	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    state: ChainState<'a>,$/;"	m	struct:Chain
+state	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^    state: crate::chain::ChainState<'a>,$/;"	m	struct:Chain
+state	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    state: Option<State>,$/;"	m	struct:Cursor
+state_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn state_dir() -> Option<PathBuf> {$/;"	f
+state_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn state_dir()      -> Option<PathBuf> { env::var_os("XDG_STATE_HOME") .and_then(dirs_sys::i/;"	f
+state_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn state_dir()      -> Option<PathBuf> { None }$/;"	f
+state_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn state_dir()      -> Option<PathBuf> { None }$/;"	f
+state_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn state_dir()      -> Option<PathBuf> { None }$/;"	f
+statement	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    statement: Statement<'l>,$/;"	m	struct:Cursor
+statement	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^mod statement;$/;"	n
+status	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        pub(crate) fn status(&self) -> BacktraceStatus {$/;"	P	implementation:capture::Backtrace
+str	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^            Error::Panic(panic_err) => match panic_err.downcast_ref::<&'static str>() {$/;"	v	method:Error::message
+str	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl<'l> Bindable for &'l str {$/;"	c
+str_to_cstr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^macro_rules! str_to_cstr($/;"	M
+stream_sink	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn stream_sink<T: IntoDart>(&self) -> StreamSink<T> {$/;"	P	implementation:TaskCallback
+success	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn success<T: IntoDart>(&self, result: T) -> bool {$/;"	P	implementation:Rust2Dart
+success	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^    pub success: bool,$/;"	m	struct:WireSyncReturnStruct
+support	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/lib.rs	/^pub mod support;$/;"	n
+symbols	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        symbols: Vec<BacktraceSymbol>,$/;"	m	struct:capture::BacktraceFrame
+sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        sync: Once,$/;"	m	struct:capture::LazilyResolvedCapture
+template_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn template_dir() -> Option<PathBuf> {$/;"	f
+template_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn template_dir()   -> Option<PathBuf> { dirs_sys::user_dir("TEMPLATES") }$/;"	f
+template_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn template_dir()   -> Option<PathBuf> { None }$/;"	f
+template_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn template_dir()   -> Option<PathBuf> { None }$/;"	f
+template_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn template_dir()   -> Option<PathBuf> { dirs_sys::known_folder_templates() }$/;"	f
+test	/home/actuday/dev/dbms/rust/src/api.rs	/^    fn test() {$/;"	f	module:tests
+test_dirs	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^    fn test_dirs() {$/;"	f	module:tests
+test_file_user_dirs_exists	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^    fn test_file_user_dirs_exists() {$/;"	f	module:tests
+tests	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^mod tests {$/;"	n
+tests	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^mod tests {$/;"	n
+tests	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^mod tests {$/;"	n
+tests	/home/actuday/dev/dbms/rust/src/api.rs	/^mod tests {$/;"	n
+total_change_count	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn total_change_count(&self) -> usize {$/;"	P	implementation:Connection
+total_changes	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn total_changes(&self) -> usize {$/;"	P	implementation:Connection
+transient	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^macro_rules! transient($/;"	M
+two_digits	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    fn two_digits() {$/;"	f	module:tests
+u8	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl<'l> Bindable for &'l [u8] {$/;"	c
+u8	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl Wire2Api<u8> for u8 {$/;"	c
+values	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/cursor.rs	/^    values: Option<Vec<Value>>,$/;"	m	struct:Cursor
+vec_from_leak_ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^pub unsafe fn vec_from_leak_ptr<T>(ptr: *mut T, len: i32) -> Vec<T> {$/;"	f
+version	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^pub fn version() -> usize {$/;"	f
+video_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^pub fn video_dir() -> Option<PathBuf> {$/;"	f
+video_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^pub fn video_dir()      -> Option<PathBuf> { dirs_sys::user_dir("VIDEOS") }$/;"	f
+video_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/mac.rs	/^pub fn video_dir()      -> Option<PathBuf> { home_dir().map(|h| h.join("Movies")) }$/;"	f
+video_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/wasm.rs	/^pub fn video_dir()      -> Option<PathBuf> { None }$/;"	f
+video_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/win.rs	/^pub fn video_dir()      -> Option<PathBuf> { dirs_sys::known_folder_videos() }$/;"	f
+vtable	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    vtable: &'static ErrorVTable,$/;"	m	struct:ErrorImpl
+vtable	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^unsafe fn vtable(p: NonNull<ErrorImpl>) -> &'static ErrorVTable {$/;"	f
+wasm	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^mod wasm;$/;"	n
+win	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^mod win;$/;"	n
+wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> Option<T> {$/;"	f
+wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> String {$/;"	P	implementation:wire_uint_8_list
+wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> T;$/;"	P	interface:Wire2Api
+wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> Vec<u8> {$/;"	P	implementation:wire_uint_8_list
+wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> i64 {$/;"	P	implementation:i64
+wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> u8 {$/;"	P	implementation:u8
+wire_get_citizen_summary	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_get_citizen_summary(port_: i64, id: i64, password: *mut wire_uint_8_list)/;"	f
+wire_get_official_summary	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_get_official_summary(port_: i64, id: i64, password: *mut wire_uint_8_list/;"	f
+wire_uint_8_list	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl Wire2Api<String> for *mut wire_uint_8_list {$/;"	c
+wire_uint_8_list	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl Wire2Api<Vec<u8>> for *mut wire_uint_8_list {$/;"	c
+wire_uint_8_list	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub struct wire_uint_8_list {$/;"	s
+with_context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn with_context<C, F>(self, context: F) -> Result<T, Error>$/;"	P	implementation:Option
+with_context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn with_context<C, F>(self, context: F) -> Result<T, Error>$/;"	f
+with_context	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^    fn with_context<C, F>(self, f: F) -> Result<T, Error>$/;"	P	interface:Context
+wrap	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn wrap<PrepareFn, TaskFn, TaskRet>(&self, wrap_info: WrapInfo, prepare: PrepareFn)$/;"	P	implementation:SimpleHandler
+wrap	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn wrap<PrepareFn, TaskFn, TaskRet>(&self, wrap_info: WrapInfo, prepare: PrepareFn)$/;"	P	interface:Handler
+wrap_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn wrap_sync<SyncTaskFn>($/;"	P	implementation:SimpleHandler
+wrap_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn wrap_sync<SyncTaskFn>($/;"	P	interface:Handler
+wrapper	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^mod wrapper;$/;"	n
+write_str	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn write_str(&mut self, s: &str) -> fmt::Result {$/;"	P	implementation:Quoted
+write_str	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    fn write_str(&mut self, s: &str) -> fmt::Result {$/;"	P	implementation:Buf
+write_str	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    fn write_str(&mut self, s: &str) -> fmt::Result {$/;"	f
+written	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/ensure.rs	/^    written: usize,$/;"	m	struct:Buf
