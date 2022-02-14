@@ -1,5 +1,7 @@
 import 'package:dbms/rust/main.dart';
 import 'package:flutter/material.dart';
+import 'new_citizen.dart';
+import 'new_official.dart';
 
 class Official extends StatefulWidget {
   final OfficialData data;
@@ -34,7 +36,12 @@ class OfficialState extends State<Official> {
           Container(
             padding: const EdgeInsets.all(20),
             child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const NewCitizen()));
+                },
                 child: const Text(
                   'Register new citizen',
                   style: TextStyle(color: Colors.white),
@@ -47,9 +54,50 @@ class OfficialState extends State<Official> {
           Container(
             padding: const EdgeInsets.all(20),
             child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const NewOfficial()));
+                },
                 child: const Text(
                   'Register new official',
+                  style: TextStyle(color: Colors.white),
+                ),
+                // ignore: prefer_const_constructors
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.orange),
+                )),
+          ),
+          Container(
+            padding: const EdgeInsets.all(20),
+            child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const NewOfficial()));
+                },
+                child: const Text(
+                  'Create appoinment',
+                  style: TextStyle(color: Colors.white),
+                ),
+                // ignore: prefer_const_constructors
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.orange),
+                )),
+          ),
+          Container(
+            padding: const EdgeInsets.all(20),
+            child: ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const NewOfficial()));
+                },
+                child: const Text(
+                  'Register new Vaccination center',
                   style: TextStyle(color: Colors.white),
                 ),
                 // ignore: prefer_const_constructors

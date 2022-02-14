@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.deepOrange,
       ),
-      home: const HomePage(title: 'Vax tracker - DBMS project'),
+      home: const HomePage(title: 'Vax administrator - DBMS project'),
     );
   }
 }

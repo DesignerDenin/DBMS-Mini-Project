@@ -30,6 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_rust_bridge: ^1.15.1  
+  pie_chart: ^5.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
