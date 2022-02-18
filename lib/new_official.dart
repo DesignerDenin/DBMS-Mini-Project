@@ -4,12 +4,9 @@ import 'package:dbms/rust/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-const path = 'librust.so';
-late final library = DynamicLibrary.open(path);
-late final api = RustImpl(library);
-
 class NewOfficial extends StatefulWidget {
-  const NewOfficial({Key? key}) : super(key: key);
+  final RustImpl api;
+  const NewOfficial({Key? key, required this.api}) : super(key: key);
 
   @override
   State<NewOfficial> createState() => NewOfficialState();
@@ -25,8 +22,8 @@ class NewOfficialState extends State<NewOfficial> {
     super.initState();
   }
 
-  Future<OfficialData> getOfficialData(id, password) =>
-      api.getOfficialSummary(id: id, password: password);
+  Future<ID> addCitizen(name, password, age, gender) => widget.api
+      .addCitizen(name: name, password: password, age: age, gender: gender);
 
   @override
   Widget build(BuildContext context) {

@@ -14,6 +14,98 @@ use flutter_rust_bridge::*;
 // Section: wire functions
 
 #[no_mangle]
+pub extern "C" fn wire_add_citizen(
+    port_: i64,
+    name: *mut wire_uint_8_list,
+    password: *mut wire_uint_8_list,
+    age: i64,
+    gender: *mut wire_uint_8_list,
+) {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap(
+        WrapInfo {
+            debug_name: "add_citizen",
+            port: Some(port_),
+            mode: FfiCallMode::Normal,
+        },
+        move || {
+            let api_name = name.wire2api();
+            let api_password = password.wire2api();
+            let api_age = age.wire2api();
+            let api_gender = gender.wire2api();
+            move |task_callback| add_citizen(api_name, api_password, api_age, api_gender)
+        },
+    )
+}
+
+#[no_mangle]
+pub extern "C" fn wire_add_appoinment(port_: i64, citizen_id: i64, center_id: i64) {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap(
+        WrapInfo {
+            debug_name: "add_appoinment",
+            port: Some(port_),
+            mode: FfiCallMode::Normal,
+        },
+        move || {
+            let api_citizen_id = citizen_id.wire2api();
+            let api_center_id = center_id.wire2api();
+            move |task_callback| add_appoinment(api_citizen_id, api_center_id)
+        },
+    )
+}
+
+#[no_mangle]
+pub extern "C" fn wire_add_vaccination_center(
+    port_: i64,
+    name: *mut wire_uint_8_list,
+    location: *mut wire_uint_8_list,
+) {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap(
+        WrapInfo {
+            debug_name: "add_vaccination_center",
+            port: Some(port_),
+            mode: FfiCallMode::Normal,
+        },
+        move || {
+            let api_name = name.wire2api();
+            let api_location = location.wire2api();
+            move |task_callback| add_vaccination_center(api_name, api_location)
+        },
+    )
+}
+
+#[no_mangle]
+pub extern "C" fn wire_get_vax_centers(port_: i64) {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap(
+        WrapInfo {
+            debug_name: "get_vax_centers",
+            port: Some(port_),
+            mode: FfiCallMode::Normal,
+        },
+        move || move |task_callback| get_vax_centers(),
+    )
+}
+
+#[no_mangle]
+pub extern "C" fn wire_add_official(
+    port_: i64,
+    name: *mut wire_uint_8_list,
+    password: *mut wire_uint_8_list,
+) {
+    FLUTTER_RUST_BRIDGE_HANDLER.wrap(
+        WrapInfo {
+            debug_name: "add_official",
+            port: Some(port_),
+            mode: FfiCallMode::Normal,
+        },
+        move || {
+            let api_name = name.wire2api();
+            let api_password = password.wire2api();
+            move |task_callback| add_official(api_name, api_password)
+        },
+    )
+}
+
+#[no_mangle]
 pub extern "C" fn wire_get_citizen_summary(port_: i64, id: i64, password: *mut wire_uint_8_list) {
     FLUTTER_RUST_BRIDGE_HANDLER.wrap(
         WrapInfo {
@@ -134,11 +226,23 @@ impl support::IntoDart for CitizenData {
             self.name.into_dart(),
             self.age.into_dart(),
             self.gender.into_dart(),
+            self.sick_no.into_dart(),
+            self.tot_citizens.into_dart(),
+            self.a_date.into_dart(),
+            self.a_name.into_dart(),
+            self.a_location.into_dart(),
         ]
         .into_dart()
     }
 }
 impl support::IntoDartExceptPrimitive for CitizenData {}
+
+impl support::IntoDart for ID {
+    fn into_dart(self) -> support::DartCObject {
+        vec![self.id.into_dart()].into_dart()
+    }
+}
+impl support::IntoDartExceptPrimitive for ID {}
 
 impl support::IntoDart for OfficialData {
     fn into_dart(self) -> support::DartCObject {

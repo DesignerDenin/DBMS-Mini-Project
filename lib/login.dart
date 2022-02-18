@@ -101,7 +101,8 @@ class LoginState extends State<Login> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => Official(data: data)));
+                            builder: (context) =>
+                                Official(data: data, api: api)));
                   } catch (e) {
                     setState(() {
                       header = "Sign in - incorrect credentials";

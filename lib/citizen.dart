@@ -11,11 +11,10 @@ class Citizen extends StatefulWidget {
 }
 
 class CitizenState extends State<Citizen> {
-  Map<String, double> dataMap = {
-    "Flutter": 5,
-    "React": 3,
-    "Xamarin": 2,
-    "Ionic": 2,
+  late Map<String, double> dataMap = {
+    "Infected": widget.data.sickNo.toDouble(),
+    "Healthy":
+        widget.data.totCitizens.toDouble() - widget.data.sickNo.toDouble(),
   };
 
   double fontSize() {
@@ -29,6 +28,13 @@ class CitizenState extends State<Citizen> {
     } else {
       return "Male";
     }
+  }
+
+  DateTime fromJulian(int jd) {
+    int day = jd % 1000;
+    int year = (jd - day) ~/ 1000;
+    var date1 = DateTime(year, 1, 1);
+    return date1.add(Duration(days: day - 1));
   }
 
   @override
@@ -65,20 +71,42 @@ class CitizenState extends State<Citizen> {
                 child: Column(
                   children: [
                     Text(
-                      'Personal information:',
+                      'Your Personal information:',
                       style: TextStyle(fontSize: fontSize()),
                     ),
-                    const Padding(padding: EdgeInsets.only(bottom: 10)),
+                    const Padding(padding: EdgeInsets.only(bottom: 60)),
                     Text("Name: ${widget.data.name}"),
-                    const Padding(padding: EdgeInsets.only(bottom: 10)),
+                    const Padding(padding: EdgeInsets.only(bottom: 30)),
                     Text("Age: ${widget.data.age}"),
-                    const Padding(padding: EdgeInsets.only(bottom: 10)),
+                    const Padding(padding: EdgeInsets.only(bottom: 30)),
                     Text("Gender: ${getGender()}"),
-                    const Padding(padding: EdgeInsets.only(bottom: 10)),
+                    const Padding(padding: EdgeInsets.only(bottom: 30)),
                   ],
                 ),
               ),
-              const Padding(padding: EdgeInsets.only(bottom: 10)),
+              const Padding(padding: EdgeInsets.only(bottom: 50)),
+              Container(
+                padding: const EdgeInsets.all(50),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.orange[500]!),
+                    borderRadius: const BorderRadius.all(Radius.circular(21))),
+                child: Column(
+                  children: [
+                    Text(
+                      'Your next vaccination appoinment:',
+                      style: TextStyle(fontSize: fontSize()),
+                    ),
+                    const Padding(padding: EdgeInsets.only(bottom: 60)),
+                    Text("Center name: ${widget.data.aName}"),
+                    const Padding(padding: EdgeInsets.only(bottom: 30)),
+                    Text("Center location: ${widget.data.aLocation}"),
+                    const Padding(padding: EdgeInsets.only(bottom: 30)),
+                    Text("Date: ${fromJulian(widget.data.aDate)}"),
+                    const Padding(padding: EdgeInsets.only(bottom: 30)),
+                  ],
+                ),
+              ),
+              const Padding(padding: EdgeInsets.only(bottom: 50)),
             ],
           )),
         ));

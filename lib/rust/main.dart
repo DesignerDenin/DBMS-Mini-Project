@@ -12,6 +12,24 @@ import 'package:flutter_rust_bridge/flutter_rust_bridge.dart';
 import 'dart:ffi' as ffi;
 
 abstract class Rust {
+  Future<ID> addCitizen(
+      {required String name,
+      required String password,
+      required int age,
+      required String gender,
+      dynamic hint});
+
+  Future<void> addAppoinment(
+      {required int citizenId, required int centerId, dynamic hint});
+
+  Future<ID> addVaccinationCenter(
+      {required String name, required String location, dynamic hint});
+
+  Future<List<String>> getVaxCenters({dynamic hint});
+
+  Future<ID> addOfficial(
+      {required String name, required String password, dynamic hint});
+
   Future<CitizenData> getCitizenSummary(
       {required int id, required String password, dynamic hint});
 
@@ -23,11 +41,29 @@ class CitizenData {
   final String name;
   final int age;
   final String gender;
+  final int sickNo;
+  final int totCitizens;
+  final int aDate;
+  final String aName;
+  final String aLocation;
 
   CitizenData({
     required this.name,
     required this.age,
     required this.gender,
+    required this.sickNo,
+    required this.totCitizens,
+    required this.aDate,
+    required this.aName,
+    required this.aLocation,
+  });
+}
+
+class ID {
+  final int id;
+
+  ID({
+    required this.id,
   });
 }
 
@@ -43,6 +79,82 @@ class RustImpl extends FlutterRustBridgeBase<RustWire> implements Rust {
   factory RustImpl(ffi.DynamicLibrary dylib) => RustImpl.raw(RustWire(dylib));
 
   RustImpl.raw(RustWire inner) : super(inner);
+
+  Future<ID> addCitizen(
+          {required String name,
+          required String password,
+          required int age,
+          required String gender,
+          dynamic hint}) =>
+      executeNormal(FlutterRustBridgeTask(
+        callFfi: (port_) => inner.wire_add_citizen(
+            port_,
+            _api2wire_String(name),
+            _api2wire_String(password),
+            _api2wire_i64(age),
+            _api2wire_String(gender)),
+        parseSuccessData: _wire2api_id,
+        constMeta: const FlutterRustBridgeTaskConstMeta(
+          debugName: "add_citizen",
+          argNames: ["name", "password", "age", "gender"],
+        ),
+        argValues: [name, password, age, gender],
+        hint: hint,
+      ));
+
+  Future<void> addAppoinment(
+          {required int citizenId, required int centerId, dynamic hint}) =>
+      executeNormal(FlutterRustBridgeTask(
+        callFfi: (port_) => inner.wire_add_appoinment(
+            port_, _api2wire_i64(citizenId), _api2wire_i64(centerId)),
+        parseSuccessData: _wire2api_unit,
+        constMeta: const FlutterRustBridgeTaskConstMeta(
+          debugName: "add_appoinment",
+          argNames: ["citizenId", "centerId"],
+        ),
+        argValues: [citizenId, centerId],
+        hint: hint,
+      ));
+
+  Future<ID> addVaccinationCenter(
+          {required String name, required String location, dynamic hint}) =>
+      executeNormal(FlutterRustBridgeTask(
+        callFfi: (port_) => inner.wire_add_vaccination_center(
+            port_, _api2wire_String(name), _api2wire_String(location)),
+        parseSuccessData: _wire2api_id,
+        constMeta: const FlutterRustBridgeTaskConstMeta(
+          debugName: "add_vaccination_center",
+          argNames: ["name", "location"],
+        ),
+        argValues: [name, location],
+        hint: hint,
+      ));
+
+  Future<List<String>> getVaxCenters({dynamic hint}) =>
+      executeNormal(FlutterRustBridgeTask(
+        callFfi: (port_) => inner.wire_get_vax_centers(port_),
+        parseSuccessData: _wire2api_StringList,
+        constMeta: const FlutterRustBridgeTaskConstMeta(
+          debugName: "get_vax_centers",
+          argNames: [],
+        ),
+        argValues: [],
+        hint: hint,
+      ));
+
+  Future<ID> addOfficial(
+          {required String name, required String password, dynamic hint}) =>
+      executeNormal(FlutterRustBridgeTask(
+        callFfi: (port_) => inner.wire_add_official(
+            port_, _api2wire_String(name), _api2wire_String(password)),
+        parseSuccessData: _wire2api_id,
+        constMeta: const FlutterRustBridgeTaskConstMeta(
+          debugName: "add_official",
+          argNames: ["name", "password"],
+        ),
+        argValues: [name, password],
+        hint: hint,
+      ));
 
   Future<CitizenData> getCitizenSummary(
           {required int id, required String password, dynamic hint}) =>
@@ -100,19 +212,37 @@ String _wire2api_String(dynamic raw) {
   return raw as String;
 }
 
+List<String> _wire2api_StringList(dynamic raw) {
+  return (raw as List<dynamic>).cast<String>();
+}
+
 CitizenData _wire2api_citizen_data(dynamic raw) {
   final arr = raw as List<dynamic>;
-  if (arr.length != 3)
-    throw Exception('unexpected arr length: expect 3 but see ${arr.length}');
+  if (arr.length != 8)
+    throw Exception('unexpected arr length: expect 8 but see ${arr.length}');
   return CitizenData(
     name: _wire2api_String(arr[0]),
     age: _wire2api_i64(arr[1]),
     gender: _wire2api_String(arr[2]),
+    sickNo: _wire2api_i64(arr[3]),
+    totCitizens: _wire2api_i64(arr[4]),
+    aDate: _wire2api_i64(arr[5]),
+    aName: _wire2api_String(arr[6]),
+    aLocation: _wire2api_String(arr[7]),
   );
 }
 
 int _wire2api_i64(dynamic raw) {
   return raw as int;
+}
+
+ID _wire2api_id(dynamic raw) {
+  final arr = raw as List<dynamic>;
+  if (arr.length != 1)
+    throw Exception('unexpected arr length: expect 1 but see ${arr.length}');
+  return ID(
+    id: _wire2api_i64(arr[0]),
+  );
 }
 
 OfficialData _wire2api_official_data(dynamic raw) {
@@ -130,6 +260,10 @@ int _wire2api_u8(dynamic raw) {
 
 Uint8List _wire2api_uint_8_list(dynamic raw) {
   return raw as Uint8List;
+}
+
+void _wire2api_unit(dynamic raw) {
+  return;
 }
 
 // ignore_for_file: camel_case_types, non_constant_identifier_names, avoid_positional_boolean_parameters, annotate_overrides, constant_identifier_names
@@ -152,6 +286,108 @@ class RustWire implements FlutterRustBridgeWireBase {
       ffi.Pointer<T> Function<T extends ffi.NativeType>(String symbolName)
           lookup)
       : _lookup = lookup;
+
+  void wire_add_citizen(
+    int port_,
+    ffi.Pointer<wire_uint_8_list> name,
+    ffi.Pointer<wire_uint_8_list> password,
+    int age,
+    ffi.Pointer<wire_uint_8_list> gender,
+  ) {
+    return _wire_add_citizen(
+      port_,
+      name,
+      password,
+      age,
+      gender,
+    );
+  }
+
+  late final _wire_add_citizenPtr = _lookup<
+      ffi.NativeFunction<
+          ffi.Void Function(
+              ffi.Int64,
+              ffi.Pointer<wire_uint_8_list>,
+              ffi.Pointer<wire_uint_8_list>,
+              ffi.Int64,
+              ffi.Pointer<wire_uint_8_list>)>>('wire_add_citizen');
+  late final _wire_add_citizen = _wire_add_citizenPtr.asFunction<
+      void Function(int, ffi.Pointer<wire_uint_8_list>,
+          ffi.Pointer<wire_uint_8_list>, int, ffi.Pointer<wire_uint_8_list>)>();
+
+  void wire_add_appoinment(
+    int port_,
+    int citizen_id,
+    int center_id,
+  ) {
+    return _wire_add_appoinment(
+      port_,
+      citizen_id,
+      center_id,
+    );
+  }
+
+  late final _wire_add_appoinmentPtr = _lookup<
+      ffi.NativeFunction<
+          ffi.Void Function(
+              ffi.Int64, ffi.Int64, ffi.Int64)>>('wire_add_appoinment');
+  late final _wire_add_appoinment =
+      _wire_add_appoinmentPtr.asFunction<void Function(int, int, int)>();
+
+  void wire_add_vaccination_center(
+    int port_,
+    ffi.Pointer<wire_uint_8_list> name,
+    ffi.Pointer<wire_uint_8_list> location,
+  ) {
+    return _wire_add_vaccination_center(
+      port_,
+      name,
+      location,
+    );
+  }
+
+  late final _wire_add_vaccination_centerPtr = _lookup<
+      ffi.NativeFunction<
+          ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>,
+              ffi.Pointer<wire_uint_8_list>)>>('wire_add_vaccination_center');
+  late final _wire_add_vaccination_center =
+      _wire_add_vaccination_centerPtr.asFunction<
+          void Function(int, ffi.Pointer<wire_uint_8_list>,
+              ffi.Pointer<wire_uint_8_list>)>();
+
+  void wire_get_vax_centers(
+    int port_,
+  ) {
+    return _wire_get_vax_centers(
+      port_,
+    );
+  }
+
+  late final _wire_get_vax_centersPtr =
+      _lookup<ffi.NativeFunction<ffi.Void Function(ffi.Int64)>>(
+          'wire_get_vax_centers');
+  late final _wire_get_vax_centers =
+      _wire_get_vax_centersPtr.asFunction<void Function(int)>();
+
+  void wire_add_official(
+    int port_,
+    ffi.Pointer<wire_uint_8_list> name,
+    ffi.Pointer<wire_uint_8_list> password,
+  ) {
+    return _wire_add_official(
+      port_,
+      name,
+      password,
+    );
+  }
+
+  late final _wire_add_officialPtr = _lookup<
+      ffi.NativeFunction<
+          ffi.Void Function(ffi.Int64, ffi.Pointer<wire_uint_8_list>,
+              ffi.Pointer<wire_uint_8_list>)>>('wire_add_official');
+  late final _wire_add_official = _wire_add_officialPtr.asFunction<
+      void Function(
+          int, ffi.Pointer<wire_uint_8_list>, ffi.Pointer<wire_uint_8_list>)>();
 
   void wire_get_citizen_summary(
     int port_,

@@ -109,6 +109,9 @@ FfiCallMode	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutte
 Float	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Float(f64),$/;"	e	enum:Value
 Float	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/lib.rs	/^    Float,$/;"	e	enum:Type
 Handler	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^pub trait Handler {$/;"	i
+ID	/home/actuday/dev/dbms/rust/src/api.rs	/^pub struct ID {$/;"	s
+ID	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl support::IntoDart for ID {$/;"	c
+ID	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl support::IntoDartExceptPrimitive for ID {}$/;"	c
 Indented	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^impl<T> Write for Indented<'_, T>$/;"	c
 Indented	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^struct Indented<'a, D> {$/;"	s
 Inner	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^    enum Inner {$/;"	g	module:capture
@@ -224,8 +227,15 @@ _assert	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0
 _assert_send_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^fn _assert_send_sync() {$/;"	f
 _object	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    _object: E,$/;"	m	struct:ErrorImpl
 _phantom_data	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    _phantom_data: PhantomData<T>,$/;"	m	struct:StreamSink
+a_date	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_date: i64,$/;"	m	struct:CitizenData
+a_location	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_location: String,$/;"	m	struct:CitizenData
+a_name	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_name: String,$/;"	m	struct:CitizenData
 actual_start	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        actual_start: usize,$/;"	m	struct:capture::Capture
 add	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn add(&self, value: T) -> bool {$/;"	P	implementation:StreamSink
+add_appoinment	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_appoinment(citizen_id: i64, center_id: i64) -> Result<()> {$/;"	f
+add_citizen	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_citizen(name: String, password: String, age: i64, gender: String) -> Result<ID> {$/;"	f
+add_official	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_official(name: String, password: String) -> Result<ID> {$/;"	f
+add_vaccination_center	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_vaccination_center(name: String, location: String) -> Result<ID> {$/;"	f
 age	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub age: i64,$/;"	m	struct:CitizenData
 anyhow	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/macros.rs	/^macro_rules! anyhow {$/;"	M
 anyhow_kind	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/kind.rs	/^    fn anyhow_kind(&self) -> Adhoc {$/;"	P	interface:AdhocKind
@@ -440,6 +450,7 @@ from_std	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.
 gender	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub gender: String,$/;"	m	struct:CitizenData
 get_citizen_summary	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn get_citizen_summary(id: i64, password: String) -> Result<CitizenData> {$/;"	f
 get_official_summary	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn get_official_summary(id: i64, password: String) -> Result<OfficialData> {$/;"	f
+get_vax_centers	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn get_vax_centers() -> Result<Vec<String>> {$/;"	f
 handle_error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn handle_error(&self, port: i64, error: Error) {$/;"	P	implementation:ReportDartErrorHandler
 handle_error	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn handle_error(&self, port: i64, error: Error);$/;"	P	interface:ErrorHandler
 handle_error_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/handler.rs	/^    fn handle_error_sync(&self, error: Error) -> Vec<u8> {$/;"	P	implementation:ReportDartErrorHandler
@@ -453,12 +464,14 @@ home_dir	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.
 i64	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Bindable for i64 {$/;"	c
 i64	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^impl Readable for i64 {$/;"	c
 i64	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl Wire2Api<i64> for i64 {$/;"	c
+id	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub id: i64,$/;"	m	struct:ID
 impl_backtrace	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^macro_rules! impl_backtrace {$/;"	M
 inner	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        inner: Inner,$/;"	m	struct:capture::Backtrace
 inner	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/fmt.rs	/^    inner: &'a mut D,$/;"	m	struct:Indented
 inner	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/lib.rs	/^    inner: Own<ErrorImpl>,$/;"	m	struct:Error
 into_cursor	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^    pub fn into_cursor(self) -> Cursor<'l> {$/;"	P	implementation:Statement
 into_dart	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn into_dart(self) -> support::DartCObject {$/;"	P	implementation:CitizenData
+into_dart	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn into_dart(self) -> support::DartCObject {$/;"	P	implementation:ID
 into_dart	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn into_dart(self) -> support::DartCObject {$/;"	P	implementation:OfficialData
 into_leak_vec_ptr	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/support.rs	/^pub fn into_leak_vec_ptr<T: Clone>(mut v: Vec<T>) -> (*mut T, i32) {$/;"	f
 is	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    pub fn is<E>(&self) -> bool$/;"	P	implementation:Error
@@ -601,6 +614,7 @@ set_full_mutex	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sql
 set_no_mutex	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_no_mutex(mut self) -> Self {$/;"	P	implementation:OpenFlags
 set_read_only	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_read_only(mut self) -> Self {$/;"	P	implementation:OpenFlags
 set_read_write	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn set_read_write(mut self) -> Self {$/;"	P	implementation:OpenFlags
+sick_no	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub sick_no: i64,$/;"	m	struct:CitizenData
 size_hint	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/chain.rs	/^    fn size_hint(&self) -> (usize, Option<usize>) {$/;"	P	implementation:Chain
 source	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/context.rs	/^    fn source(&self) -> Option<&(dyn StdError + 'static)> {$/;"	f
 source	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    fn source(&self) -> Option<&(dyn StdError + 'static)> {$/;"	f
@@ -639,6 +653,7 @@ tests	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.5
 tests	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lib.rs	/^mod tests {$/;"	n
 tests	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/dirs-4.0.0/src/lin.rs	/^mod tests {$/;"	n
 tests	/home/actuday/dev/dbms/rust/src/api.rs	/^mod tests {$/;"	n
+tot_citizens	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub tot_citizens: i64,$/;"	m	struct:CitizenData
 total_change_count	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn total_change_count(&self) -> usize {$/;"	P	implementation:Connection
 total_changes	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/connection.rs	/^    pub fn total_changes(&self) -> usize {$/;"	P	implementation:Connection
 transient	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/sqlite-0.26.0/src/statement.rs	/^macro_rules! transient($/;"	M
@@ -663,8 +678,13 @@ wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(s
 wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> Vec<u8> {$/;"	P	implementation:wire_uint_8_list
 wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> i64 {$/;"	P	implementation:i64
 wire2api	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^    fn wire2api(self) -> u8 {$/;"	P	implementation:u8
+wire_add_appoinment	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_add_appoinment(port_: i64, citizen_id: i64, center_id: i64) {$/;"	f
+wire_add_citizen	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_add_citizen($/;"	f
+wire_add_official	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_add_official($/;"	f
+wire_add_vaccination_center	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_add_vaccination_center($/;"	f
 wire_get_citizen_summary	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_get_citizen_summary(port_: i64, id: i64, password: *mut wire_uint_8_list)/;"	f
 wire_get_official_summary	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_get_official_summary(port_: i64, id: i64, password: *mut wire_uint_8_list/;"	f
+wire_get_vax_centers	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub extern "C" fn wire_get_vax_centers(port_: i64) {$/;"	f
 wire_uint_8_list	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl Wire2Api<String> for *mut wire_uint_8_list {$/;"	c
 wire_uint_8_list	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^impl Wire2Api<Vec<u8>> for *mut wire_uint_8_list {$/;"	c
 wire_uint_8_list	/home/actuday/dev/dbms/rust/src/bridge_generated.rs	/^pub struct wire_uint_8_list {$/;"	s

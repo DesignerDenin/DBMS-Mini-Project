@@ -1,11 +1,15 @@
+import 'package:dbms/new_appoinment.dart';
 import 'package:dbms/rust/main.dart';
 import 'package:flutter/material.dart';
 import 'new_citizen.dart';
 import 'new_official.dart';
+import 'new_vax_center.dart';
 
 class Official extends StatefulWidget {
   final OfficialData data;
-  const Official({Key? key, required this.data}) : super(key: key);
+  final RustImpl api;
+  const Official({Key? key, required this.data, required this.api})
+      : super(key: key);
 
   @override
   State<Official> createState() => OfficialState();
@@ -40,7 +44,7 @@ class OfficialState extends State<Official> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const NewCitizen()));
+                          builder: (context) => NewCitizen(api: widget.api)));
                 },
                 child: const Text(
                   'Register new citizen',
@@ -58,7 +62,7 @@ class OfficialState extends State<Official> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const NewOfficial()));
+                          builder: (context) => NewOfficial(api: widget.api)));
                 },
                 child: const Text(
                   'Register new official',
@@ -76,7 +80,8 @@ class OfficialState extends State<Official> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const NewOfficial()));
+                          builder: (context) =>
+                              NewAppoinment(api: widget.api)));
                 },
                 child: const Text(
                   'Create appoinment',
@@ -94,23 +99,10 @@ class OfficialState extends State<Official> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => const NewOfficial()));
+                          builder: (context) => NewVaxCenter(api: widget.api)));
                 },
                 child: const Text(
                   'Register new Vaccination center',
-                  style: TextStyle(color: Colors.white),
-                ),
-                // ignore: prefer_const_constructors
-                style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.orange),
-                )),
-          ),
-          Container(
-            padding: const EdgeInsets.all(20),
-            child: ElevatedButton(
-                onPressed: () {},
-                child: const Text(
-                  'Schedule vaccination',
                   style: TextStyle(color: Colors.white),
                 ),
                 // ignore: prefer_const_constructors

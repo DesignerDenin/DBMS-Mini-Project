@@ -4,12 +4,9 @@ import 'package:dbms/rust/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-const path = 'librust.so';
-late final library = DynamicLibrary.open(path);
-late final api = RustImpl(library);
-
 class NewCitizen extends StatefulWidget {
-  const NewCitizen({Key? key}) : super(key: key);
+  final RustImpl api;
+  const NewCitizen({Key? key, required this.api}) : super(key: key);
 
   @override
   State<NewCitizen> createState() => NewCitizenState();
@@ -29,8 +26,8 @@ class NewCitizenState extends State<NewCitizen> {
     super.initState();
   }
 
-  Future<CitizenData> getCitizenData(id, password) =>
-      api.getCitizenSummary(id: id, password: password);
+  Future<ID> addCitizen(name, password, age, gender) => widget.api
+      .addCitizen(name: name, password: password, age: age, gender: gender);
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +41,7 @@ class NewCitizenState extends State<NewCitizen> {
           Container(
             padding: const EdgeInsets.all(20),
             child: TextField(
-              controller: ageController,
+              controller: nameController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'Citizen\'s name',
@@ -54,7 +51,7 @@ class NewCitizenState extends State<NewCitizen> {
           Container(
             padding: const EdgeInsets.all(20),
             child: TextField(
-              controller: nameController,
+              controller: ageController,
               decoration: const InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'Age',
@@ -112,7 +109,35 @@ class NewCitizenState extends State<NewCitizen> {
               style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.all(Colors.orange),
               ),
-              onPressed: () {},
+              onPressed: () async {
+                try {
+                  var id = await addCitizen(
+                      nameController.text,
+                      passwordController.text,
+                      int.parse(ageController.text),
+                      genderValue);
+
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: const Text(
+                              "You have successfully registered a new citizen."),
+                          content: Text("ID: ${id.id}"),
+                        );
+                      });
+                } catch (e) {
+                  showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return AlertDialog(
+                          title: const Text("Error"),
+                          content:
+                              Text("Could not successfully create entry: $e"),
+                        );
+                      });
+                }
+              },
             ),
           ),
         ],
