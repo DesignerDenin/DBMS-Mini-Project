@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
           width: double.infinity,
           margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 100),
           padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 80),
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Colors.white,
             boxShadow: [
               BoxShadow(
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
                 color: shadowColor,
               ),
             ],
-            borderRadius: const BorderRadius.all(Radius.circular(20)),
+            borderRadius: BorderRadius.all(Radius.circular(20)),
           ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
