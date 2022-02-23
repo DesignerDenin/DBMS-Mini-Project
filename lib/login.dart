@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:dbms/global.dart';
 import 'package:dbms/rust/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -21,8 +22,7 @@ class Login extends StatefulWidget {
 class LoginState extends State<Login> {
   TextEditingController nameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  String header = "Sign in";
-  var headerColor = Colors.black;
+  String error = "";
 
   @override
   void initState() {
@@ -38,93 +38,155 @@ class LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Login'),
-      ),
-      body: Center(
+      body: CustomScroller(
+        child: Container(
+          width: double.infinity,
+          margin: const EdgeInsets.symmetric(horizontal: 24, vertical: 100),
+          padding: EdgeInsets.symmetric(
+              horizontal: MediaQuery.of(context).size.width * 0.1,
+              vertical: 80),
+          decoration: const BoxDecoration(
+            color: Colors.white,
+            boxShadow: [
+              BoxShadow(
+                blurRadius: 24,
+                color: shadowColor,
+              ),
+            ],
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+          ),
           child: Column(
-        children: [
-          Container(
-              alignment: Alignment.center,
-              padding: const EdgeInsets.all(10),
-              child: Text(
-                header,
-                style: TextStyle(fontSize: 20, color: headerColor),
-              )),
-          Container(
-            padding: const EdgeInsets.all(20),
-            child: TextField(
-              controller: nameController,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'User ID',
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              IconButton(
+                padding: EdgeInsets.zero,
+                onPressed: () => {Navigator.of(context).pop()},
+                icon: const Icon(
+                  Icons.arrow_back_rounded,
+                  size: 40,
+                ),
               ),
-              keyboardType: TextInputType.number,
-              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.all(20),
-            child: TextField(
-              obscureText: true,
-              controller: passwordController,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Password',
+              const SizedBox(height: 48),
+              const Text(
+                "Sign In",
+                style: TextStyle(
+                  fontSize: 42,
+                  fontWeight: FontWeight.w800,
+                  color: black,
+                  fontFamily: "Raleway",
+                ),
               ),
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
-            child: ElevatedButton(
-              onPressed: () async {
-                if (widget.userType == "citizen") {
-                  try {
-                    var data = await getCitizenData(
-                        int.parse(nameController.text),
-                        passwordController.text);
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => Citizen(data: data)));
-                  } catch (e) {
-                    setState(() {
-                      header = "Sign in - incorrect credentials";
-                      headerColor = Colors.red;
-                    });
+              const SizedBox(height: 24),
+              SizedBox(
+                width: double.infinity,
+                child: TextField(
+                  controller: nameController,
+                  style: const TextStyle(
+                    fontFamily: "Raleway",
+                  ),
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'User ID',
+                  ),
+                  keyboardType: TextInputType.number,
+                  inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+                ),
+              ),
+              const SizedBox(height: 16),
+              SizedBox(
+                width: double.infinity,
+                child: TextField(
+                  obscureText: true,
+                  style: const TextStyle(
+                    fontFamily: "Raleway",
+                  ),
+                  controller: passwordController,
+                  decoration: const InputDecoration(
+                    border: OutlineInputBorder(),
+                    labelText: 'Password',
+                  ),
+                ),
+              ),
+              const SizedBox(height: 24),
+              SizedBox(
+                width: double.infinity,
+                child: Text(
+                  error,
+                  textAlign: TextAlign.right,
+                  style: const TextStyle(
+                      fontFamily: "Raleway", fontSize: 14, color: Colors.red),
+                ),
+              ),
+              const SizedBox(height: 24),
+              ElevatedButton(
+                onPressed: () async {
+                  if (widget.userType == "citizen") {
+                    try {
+                      var data = await getCitizenData(
+                          int.parse(nameController.text),
+                          passwordController.text);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Citizen(data: data)));
+                    } catch (e) {
+                      setState(() {
+                        error = "The User ID or Password is incorrect";
+                      });
+                    }
+                  } else if (widget.userType == "official") {
+                    try {
+                      var data = await getOfficialData(
+                          int.parse(nameController.text),
+                          passwordController.text);
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  Official(data: data, api: api)));
+                    } catch (e) {
+                      setState(() {
+                        error = "The User ID or Password is incorrect";
+                      });
+                    }
                   }
-                } else if (widget.userType == "official") {
-                  try {
-                    var data = await getOfficialData(
-                        int.parse(nameController.text),
-                        passwordController.text);
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) =>
-                                Official(data: data, api: api)));
-                  } catch (e) {
-                    setState(() {
-                      header = "Sign in - incorrect credentials";
-                      headerColor = Colors.red;
-                    });
-                  }
-                }
-              },
-              child: widget.userType == "official"
-                  ? const Text(
-                      'Login as official',
-                    )
-                  : const Text(
-                      'Login as citizen',
+                },
+                child: Container(
+                  width: double.infinity,
+                  alignment: Alignment.center,
+                  padding: const EdgeInsets.symmetric(vertical: 20),
+                  child: widget.userType == "official"
+                      ? const Text(
+                          'Login as Official',
+                          style: TextStyle(
+                            fontFamily: "Raleway",
+                            fontSize: 18,
+                          ),
+                        )
+                      : const Text(
+                          'Login as Citizen',
+                          style: TextStyle(
+                            fontFamily: "Raleway",
+                            fontSize: 18,
+                          ),
+                        ),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.blue),
+                  shape: MaterialStateProperty.all(
+                    const RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(
+                        Radius.circular(40),
+                      ),
                     ),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.orange),
+                  ),
+                ),
               ),
-            ),
+            ],
           ),
-        ],
-      )),
+        ),
+      ),
     );
   }
 }
