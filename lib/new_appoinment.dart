@@ -79,7 +79,7 @@ class NewAppoinmentState extends State<NewAppoinment> {
                 'Register New Appoinment',
               ),
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.orange),
+                backgroundColor: MaterialStateProperty.all(Colors.blue),
               ),
               onPressed: () async {
                 try {

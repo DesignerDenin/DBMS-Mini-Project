@@ -61,7 +61,7 @@ class NewOfficialState extends State<NewOfficial> {
                 'Register New Official',
               ),
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.orange),
+                backgroundColor: MaterialStateProperty.all(Colors.blue),
               ),
               onPressed: () {},
             ),

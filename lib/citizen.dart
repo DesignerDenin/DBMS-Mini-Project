@@ -60,13 +60,13 @@ class CitizenState extends State<Citizen> {
                   child: PieChart(
                     dataMap: dataMap,
                     chartRadius: MediaQuery.of(context).size.width / 3.2,
-                    colorList: [Colors.orange[200]!, Colors.orange[500]!],
+                    colorList: [Colors.blue[200]!, Colors.blue[500]!],
                   )),
               const Padding(padding: EdgeInsets.only(bottom: 50)),
               Container(
                 padding: const EdgeInsets.all(50),
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.orange[500]!),
+                    border: Border.all(color: Colors.blue[500]!),
                     borderRadius: const BorderRadius.all(Radius.circular(21))),
                 child: Column(
                   children: [
@@ -88,7 +88,7 @@ class CitizenState extends State<Citizen> {
               Container(
                 padding: const EdgeInsets.all(50),
                 decoration: BoxDecoration(
-                    border: Border.all(color: Colors.orange[500]!),
+                    border: Border.all(color: Colors.blue[500]!),
                     borderRadius: const BorderRadius.all(Radius.circular(21))),
                 child: Column(
                   children: [

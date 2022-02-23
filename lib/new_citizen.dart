@@ -1,5 +1,6 @@
 import 'dart:ffi';
 
+import 'package:dbms/global.dart';
 import 'package:dbms/rust/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -20,6 +21,9 @@ class NewCitizenState extends State<NewCitizen> {
   var items = ["Male", "Female"];
   var genderValue = "Male";
   var isInfected = false;
+  var textFieldStyle = const TextStyle(
+    fontFamily: "Raleway",
+  );
 
   @override
   void initState() {
@@ -32,116 +36,130 @@ class NewCitizenState extends State<NewCitizen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Register Citizen'),
-      ),
-      body: Center(
+      body: CustomScroller(
+          context: context,
           child: Column(
-        children: [
-          Container(
-            padding: const EdgeInsets.all(20),
-            child: TextField(
-              controller: nameController,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Citizen\'s name',
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              IconButton(
+                padding: EdgeInsets.zero,
+                onPressed: () => {Navigator.of(context).pop()},
+                icon: const Icon(
+                  Icons.arrow_back_rounded,
+                  size: 40,
+                ),
               ),
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.all(20),
-            child: TextField(
-              controller: ageController,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Age',
+              const SizedBox(height: 48),
+              const Text(
+                "Register Citizen",
+                style: TextStyle(
+                  fontSize: 42,
+                  fontWeight: FontWeight.w800,
+                  color: black,
+                  fontFamily: "Raleway",
+                ),
               ),
-              keyboardType: TextInputType.number,
-              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.all(20),
-            child: TextField(
-              controller: passwordController,
-              decoration: const InputDecoration(
-                border: OutlineInputBorder(),
-                labelText: 'Password',
+              const SizedBox(height: 40),
+              TextField(
+                controller: nameController,
+                style: textFieldStyle,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Citizen\'s name',
+                ),
               ),
-            ),
-          ),
-          Container(
-              padding: const EdgeInsets.all(20),
-              child: DropdownButton(
-                value: genderValue,
-                onChanged: (String? newValue) {
-                  setState(() {
-                    genderValue = newValue!;
-                  });
-                },
-                // Down Arrow Icon
-                icon: const Icon(Icons.keyboard_arrow_down),
-                items: items.map((String items) {
-                  return DropdownMenuItem(
-                    value: items,
-                    child: Text(items),
-                  );
-                }).toList(),
-              )),
-          Container(
-              padding: const EdgeInsets.all(20),
-              child: CheckboxListTile(
-                title: const Text("Is the citizen infected?"),
-                value: isInfected,
-                onChanged: (newValue) {
-                  setState(() {
-                    isInfected = newValue!;
-                  });
-                },
-                controlAffinity: ListTileControlAffinity.leading,
-              )),
-          Container(
-            padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
-            child: ElevatedButton(
-              child: const Text(
-                'Register New Citizen',
+              const SizedBox(height: 20),
+              TextField(
+                controller: ageController,
+                style: textFieldStyle,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Age',
+                ),
+                keyboardType: TextInputType.number,
+                inputFormatters: [FilteringTextInputFormatter.digitsOnly],
               ),
-              style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.orange),
+              const SizedBox(height: 20),
+              TextField(
+                controller: passwordController,
+                style: textFieldStyle,
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Password',
+                ),
               ),
-              onPressed: () async {
-                try {
-                  var id = await addCitizen(
-                      nameController.text,
-                      passwordController.text,
-                      int.parse(ageController.text),
-                      genderValue);
+              Container(
+                  padding: const EdgeInsets.all(20),
+                  child: DropdownButton(
+                    value: genderValue,
+                    onChanged: (String? newValue) {
+                      setState(() {
+                        genderValue = newValue!;
+                      });
+                    },
+                    // Down Arrow Icon
+                    icon: const Icon(Icons.keyboard_arrow_down),
+                    items: items.map((String items) {
+                      return DropdownMenuItem(
+                        value: items,
+                        child: Text(items),
+                      );
+                    }).toList(),
+                  )),
+              Container(
+                  padding: const EdgeInsets.all(20),
+                  child: CheckboxListTile(
+                    title: const Text("Is the citizen infected?"),
+                    value: isInfected,
+                    onChanged: (newValue) {
+                      setState(() {
+                        isInfected = newValue!;
+                      });
+                    },
+                    controlAffinity: ListTileControlAffinity.leading,
+                  )),
+              Container(
+                padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
+                child: ElevatedButton(
+                  child: const Text(
+                    'Register New Citizen',
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(Colors.blue),
+                  ),
+                  onPressed: () async {
+                    try {
+                      var id = await addCitizen(
+                          nameController.text,
+                          passwordController.text,
+                          int.parse(ageController.text),
+                          genderValue);
 
-                  showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return AlertDialog(
-                          title: const Text(
-                              "You have successfully registered a new citizen."),
-                          content: Text("ID: ${id.id}"),
-                        );
-                      });
-                } catch (e) {
-                  showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return AlertDialog(
-                          title: const Text("Error"),
-                          content:
-                              Text("Could not successfully create entry: $e"),
-                        );
-                      });
-                }
-              },
-            ),
-          ),
-        ],
-      )),
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text(
+                                  "You have successfully registered a new citizen."),
+                              content: Text("ID: ${id.id}"),
+                            );
+                          });
+                    } catch (e) {
+                      showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return AlertDialog(
+                              title: const Text("Error"),
+                              content: Text(
+                                  "Could not successfully create entry: $e"),
+                            );
+                          });
+                    }
+                  },
+                ),
+              ),
+            ],
+          )),
     );
   }
 }

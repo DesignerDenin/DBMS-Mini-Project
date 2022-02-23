@@ -60,7 +60,7 @@ class NewVaxCenterState extends State<NewVaxCenter> {
                 'Register New VaxCenter',
               ),
               style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.orange),
+                backgroundColor: MaterialStateProperty.all(Colors.blue),
               ),
               onPressed: () async {
                 try {
