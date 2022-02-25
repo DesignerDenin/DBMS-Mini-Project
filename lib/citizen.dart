@@ -85,27 +85,30 @@ class CitizenState extends State<Citizen> {
                 ),
               ),
               const Padding(padding: EdgeInsets.only(bottom: 50)),
-              Container(
-                padding: const EdgeInsets.all(50),
-                decoration: BoxDecoration(
-                    border: Border.all(color: Colors.blue[500]!),
-                    borderRadius: const BorderRadius.all(Radius.circular(21))),
-                child: Column(
-                  children: [
-                    Text(
-                      'Your next vaccination appoinment:',
-                      style: TextStyle(fontSize: fontSize()),
-                    ),
-                    const Padding(padding: EdgeInsets.only(bottom: 60)),
-                    Text("Center name: ${widget.data.aName}"),
-                    const Padding(padding: EdgeInsets.only(bottom: 30)),
-                    Text("Center location: ${widget.data.aLocation}"),
-                    const Padding(padding: EdgeInsets.only(bottom: 30)),
-                    Text("Date: ${fromJulian(widget.data.aDate)}"),
-                    const Padding(padding: EdgeInsets.only(bottom: 30)),
-                  ],
-                ),
-              ),
+              widget.data.aDate != null
+                  ? Container(
+                      padding: const EdgeInsets.all(50),
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.blue[500]!),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(21))),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Your next vaccination appoinment:',
+                            style: TextStyle(fontSize: fontSize()),
+                          ),
+                          const Padding(padding: EdgeInsets.only(bottom: 60)),
+                          Text("Center name: ${widget.data.aName}"),
+                          const Padding(padding: EdgeInsets.only(bottom: 30)),
+                          Text("Center location: ${widget.data.aLocation}"),
+                          const Padding(padding: EdgeInsets.only(bottom: 30)),
+                          Text("Date: ${fromJulian(widget.data.aDate!)}"),
+                          const Padding(padding: EdgeInsets.only(bottom: 30)),
+                        ],
+                      ),
+                    )
+                  : Container(),
               const Padding(padding: EdgeInsets.only(bottom: 50)),
             ],
           )),

@@ -133,7 +133,7 @@ class NewCitizenState extends State<NewCitizen> {
                           nameController.text,
                           passwordController.text,
                           int.parse(ageController.text),
-                          genderValue);
+                          genderValue == "Male" ? "M" : "F");
 
                       showDialog(
                           context: context,

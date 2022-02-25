@@ -7,9 +7,9 @@ pub struct CitizenData {
     pub gender: String,
     pub sick_no: i64,
     pub tot_citizens: i64,
-    pub a_date: i64,
-    pub a_name: String,
-    pub a_location: String,
+    pub a_date: Option<i64>,
+    pub a_name: Option<String>,
+    pub a_location: Option<String>,
 }
 
 pub struct OfficialData {
@@ -59,7 +59,7 @@ pub fn add_citizen(name: String, password: String, age: i64, gender: String) -> 
     }
 }
 
-pub fn add_appoinment(citizen_id: i64, center_id: i64) -> Result<()> {
+pub fn add_appoinment(citizen_id: i64, center_id: i64, date: i64) -> Result<()> {
     let mut db_dir = dirs::home_dir().unwrap();
     db_dir.push(".vaxdbms/vax.db");
 
@@ -71,11 +71,11 @@ pub fn add_appoinment(citizen_id: i64, center_id: i64) -> Result<()> {
     });
 
     let mut cursor = connection
-        .prepare("insert into appoinment (citizenid, centerid) values (?,?)")
+        .prepare("insert into appoinment (citizenid, centerid, date) values (?,?,?)")
         .unwrap()
         .into_cursor();
     cursor
-        .bind(&[Value::Integer(citizen_id), Value::Integer(center_id)])
+        .bind(&[Value::Integer(citizen_id), Value::Integer(center_id), Value::Integer(date)])
         .unwrap();
 
     match cursor.next() {
@@ -237,12 +237,21 @@ pub fn get_citizen_summary(id: i64, password: String) -> Result<CitizenData> {
                     gender: row[2].as_string().unwrap().to_string(),
                     sick_no: row2[0].as_integer().unwrap(),
                     tot_citizens: row3[0].as_integer().unwrap(),
-                    a_name: row4[0].as_string().unwrap().to_string(),
-                    a_location: row4[1].as_string().unwrap().to_string(),
-                    a_date: row4[2].as_integer().unwrap(),
+                    a_name: Some(row4[0].as_string().unwrap().to_string()),
+                    a_location: Some(row4[1].as_string().unwrap().to_string()),
+                    a_date: Some(row4[2].as_integer().unwrap()),
                 })
             } else {
-                Err(anyhow::Error::msg("No citizen records!"))
+                Ok(CitizenData {
+                    name: row[0].as_string().unwrap().to_string(),
+                    age: row[1].as_integer().unwrap(),
+                    gender: row[2].as_string().unwrap().to_string(),
+                    sick_no: row2[0].as_integer().unwrap(),
+                    tot_citizens: row3[0].as_integer().unwrap(),
+                    a_name: None,
+                    a_location: None,
+                    a_date: None,
+                })
             }
 
             } else {
@@ -309,6 +318,6 @@ mod tests {
         add_official(String::from("Off"), String::from("pass")).unwrap();
         add_vaccination_center(String::from("MEC"), String::from("Kochi")).unwrap();
         get_vax_centers().unwrap();
-        add_appoinment(4, 3).unwrap();
+        add_appoinment(4, 3, 1).unwrap();
     }
 }

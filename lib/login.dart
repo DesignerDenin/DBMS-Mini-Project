@@ -115,7 +115,7 @@ class LoginState extends State<Login> {
                             builder: (context) => Citizen(data: data)));
                   } catch (e) {
                     setState(() {
-                      error = "The User ID or Password is incorrect";
+                      error = "The User ID or Password is incorrect: $e";
                     });
                   }
                 } else if (widget.userType == "official") {

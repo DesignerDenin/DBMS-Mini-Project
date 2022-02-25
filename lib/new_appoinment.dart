@@ -14,6 +14,7 @@ class NewAppoinment extends StatefulWidget {
 
 class NewAppoinmentState extends State<NewAppoinment> {
   TextEditingController citizenidController = TextEditingController();
+  TextEditingController dateController = TextEditingController();
 
   String selectedCenter = "De";
   late List<String> items;
@@ -31,8 +32,8 @@ class NewAppoinmentState extends State<NewAppoinment> {
 
   Future<List<String>> getVaxCenters() => widget.api.getVaxCenters();
 
-  Future<void> addAppoinment(citizenId, centerId) =>
-      widget.api.addAppoinment(citizenId: citizenId, centerId: centerId);
+  Future<void> addAppoinment(citizenId, centerId, date) => widget.api
+      .addAppoinment(citizenId: citizenId, centerId: centerId, date: date);
 
   @override
   Widget build(BuildContext context) {
@@ -73,6 +74,18 @@ class NewAppoinmentState extends State<NewAppoinment> {
             ),
           ),
           Container(
+            padding: const EdgeInsets.all(20),
+            child: TextField(
+              controller: dateController,
+              decoration: const InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Date in Julian number',
+              ),
+              keyboardType: TextInputType.number,
+              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+            ),
+          ),
+          Container(
             padding: const EdgeInsets.fromLTRB(10, 20, 10, 0),
             child: ElevatedButton(
               child: const Text(
@@ -83,8 +96,10 @@ class NewAppoinmentState extends State<NewAppoinment> {
               ),
               onPressed: () async {
                 try {
-                  await addAppoinment(int.parse(citizenidController.text),
-                      int.parse(selectedCenter.split(":")[0]));
+                  await addAppoinment(
+                      int.parse(citizenidController.text),
+                      int.parse(selectedCenter.split(":")[0]),
+                      int.parse(dateController.text));
 
                   showDialog(
                       context: context,

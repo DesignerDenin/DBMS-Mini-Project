@@ -20,7 +20,10 @@ abstract class Rust {
       dynamic hint});
 
   Future<void> addAppoinment(
-      {required int citizenId, required int centerId, dynamic hint});
+      {required int citizenId,
+      required int centerId,
+      required int date,
+      dynamic hint});
 
   Future<ID> addVaccinationCenter(
       {required String name, required String location, dynamic hint});
@@ -43,9 +46,9 @@ class CitizenData {
   final String gender;
   final int sickNo;
   final int totCitizens;
-  final int aDate;
-  final String aName;
-  final String aLocation;
+  final int? aDate;
+  final String? aName;
+  final String? aLocation;
 
   CitizenData({
     required this.name,
@@ -53,9 +56,9 @@ class CitizenData {
     required this.gender,
     required this.sickNo,
     required this.totCitizens,
-    required this.aDate,
-    required this.aName,
-    required this.aLocation,
+    this.aDate,
+    this.aName,
+    this.aLocation,
   });
 }
 
@@ -103,16 +106,22 @@ class RustImpl extends FlutterRustBridgeBase<RustWire> implements Rust {
       ));
 
   Future<void> addAppoinment(
-          {required int citizenId, required int centerId, dynamic hint}) =>
+          {required int citizenId,
+          required int centerId,
+          required int date,
+          dynamic hint}) =>
       executeNormal(FlutterRustBridgeTask(
         callFfi: (port_) => inner.wire_add_appoinment(
-            port_, _api2wire_i64(citizenId), _api2wire_i64(centerId)),
+            port_,
+            _api2wire_i64(citizenId),
+            _api2wire_i64(centerId),
+            _api2wire_i64(date)),
         parseSuccessData: _wire2api_unit,
         constMeta: const FlutterRustBridgeTaskConstMeta(
           debugName: "add_appoinment",
-          argNames: ["citizenId", "centerId"],
+          argNames: ["citizenId", "centerId", "date"],
         ),
-        argValues: [citizenId, centerId],
+        argValues: [citizenId, centerId, date],
         hint: hint,
       ));
 
@@ -216,6 +225,10 @@ List<String> _wire2api_StringList(dynamic raw) {
   return (raw as List<dynamic>).cast<String>();
 }
 
+int _wire2api_box_autoadd_i64(dynamic raw) {
+  return raw as int;
+}
+
 CitizenData _wire2api_citizen_data(dynamic raw) {
   final arr = raw as List<dynamic>;
   if (arr.length != 8)
@@ -226,9 +239,9 @@ CitizenData _wire2api_citizen_data(dynamic raw) {
     gender: _wire2api_String(arr[2]),
     sickNo: _wire2api_i64(arr[3]),
     totCitizens: _wire2api_i64(arr[4]),
-    aDate: _wire2api_i64(arr[5]),
-    aName: _wire2api_String(arr[6]),
-    aLocation: _wire2api_String(arr[7]),
+    aDate: _wire2api_opt_box_autoadd_i64(arr[5]),
+    aName: _wire2api_opt_String(arr[6]),
+    aLocation: _wire2api_opt_String(arr[7]),
   );
 }
 
@@ -252,6 +265,14 @@ OfficialData _wire2api_official_data(dynamic raw) {
   return OfficialData(
     name: _wire2api_String(arr[0]),
   );
+}
+
+String? _wire2api_opt_String(dynamic raw) {
+  return raw == null ? null : _wire2api_String(raw);
+}
+
+int? _wire2api_opt_box_autoadd_i64(dynamic raw) {
+  return raw == null ? null : _wire2api_box_autoadd_i64(raw);
 }
 
 int _wire2api_u8(dynamic raw) {
@@ -319,20 +340,22 @@ class RustWire implements FlutterRustBridgeWireBase {
     int port_,
     int citizen_id,
     int center_id,
+    int date,
   ) {
     return _wire_add_appoinment(
       port_,
       citizen_id,
       center_id,
+      date,
     );
   }
 
   late final _wire_add_appoinmentPtr = _lookup<
       ffi.NativeFunction<
-          ffi.Void Function(
-              ffi.Int64, ffi.Int64, ffi.Int64)>>('wire_add_appoinment');
+          ffi.Void Function(ffi.Int64, ffi.Int64, ffi.Int64,
+              ffi.Int64)>>('wire_add_appoinment');
   late final _wire_add_appoinment =
-      _wire_add_appoinmentPtr.asFunction<void Function(int, int, int)>();
+      _wire_add_appoinmentPtr.asFunction<void Function(int, int, int, int)>();
 
   void wire_add_vaccination_center(
     int port_,

@@ -227,12 +227,12 @@ _assert	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0
 _assert_send_sync	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^fn _assert_send_sync() {$/;"	f
 _object	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/error.rs	/^    _object: E,$/;"	m	struct:ErrorImpl
 _phantom_data	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    _phantom_data: PhantomData<T>,$/;"	m	struct:StreamSink
-a_date	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_date: i64,$/;"	m	struct:CitizenData
-a_location	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_location: String,$/;"	m	struct:CitizenData
-a_name	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_name: String,$/;"	m	struct:CitizenData
+a_date	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_date: Option<i64>,$/;"	m	struct:CitizenData
+a_location	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_location: Option<String>,$/;"	m	struct:CitizenData
+a_name	/home/actuday/dev/dbms/rust/src/api.rs	/^    pub a_name: Option<String>,$/;"	m	struct:CitizenData
 actual_start	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/anyhow-1.0.53/src/backtrace.rs	/^        actual_start: usize,$/;"	m	struct:capture::Capture
 add	/home/actuday/.cargo/registry/src/github.com-1ecc6299db9ec823/flutter_rust_bridge-1.15.1/src/rust2dart.rs	/^    pub fn add(&self, value: T) -> bool {$/;"	P	implementation:StreamSink
-add_appoinment	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_appoinment(citizen_id: i64, center_id: i64) -> Result<()> {$/;"	f
+add_appoinment	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_appoinment(citizen_id: i64, center_id: i64, date: i64) -> Result<()> {$/;"	f
 add_citizen	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_citizen(name: String, password: String, age: i64, gender: String) -> Result<ID> {$/;"	f
 add_official	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_official(name: String, password: String) -> Result<ID> {$/;"	f
 add_vaccination_center	/home/actuday/dev/dbms/rust/src/api.rs	/^pub fn add_vaccination_center(name: String, location: String) -> Result<ID> {$/;"	f

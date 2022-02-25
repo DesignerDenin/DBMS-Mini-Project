@@ -38,7 +38,7 @@ pub extern "C" fn wire_add_citizen(
 }
 
 #[no_mangle]
-pub extern "C" fn wire_add_appoinment(port_: i64, citizen_id: i64, center_id: i64) {
+pub extern "C" fn wire_add_appoinment(port_: i64, citizen_id: i64, center_id: i64, date: i64) {
     FLUTTER_RUST_BRIDGE_HANDLER.wrap(
         WrapInfo {
             debug_name: "add_appoinment",
@@ -48,7 +48,8 @@ pub extern "C" fn wire_add_appoinment(port_: i64, citizen_id: i64, center_id: i6
         move || {
             let api_citizen_id = citizen_id.wire2api();
             let api_center_id = center_id.wire2api();
-            move |task_callback| add_appoinment(api_citizen_id, api_center_id)
+            let api_date = date.wire2api();
+            move |task_callback| add_appoinment(api_citizen_id, api_center_id, api_date)
         },
     )
 }
