@@ -1,5 +1,4 @@
 import 'dart:ffi';
-
 import 'package:dbms/global.dart';
 import 'package:flutter/material.dart';
 import 'login.dart';
@@ -99,6 +98,20 @@ class _HomePageState extends State<HomePage> {
                   child: loginOptionCard(
                     "assets/padlock.png",
                     "Official",
+                  ),
+                  style: buttonStyle,
+                ),
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => NewCitizen(api: api)),
+                    );
+                  },
+                  child: loginOptionCard(
+                    "assets/doctor.png",
+                    "Doctor",
                   ),
                   style: buttonStyle,
                 ),

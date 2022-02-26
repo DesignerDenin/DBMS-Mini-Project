@@ -1,8 +1,5 @@
-import 'dart:ffi';
-
 import 'package:dbms/rust/main.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 class NewVaxCenter extends StatefulWidget {
   final RustImpl api;
