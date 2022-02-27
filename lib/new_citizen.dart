@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:dbms/global.dart';
 import 'package:dbms/rust/main.dart';
 import 'package:flutter/material.dart';
